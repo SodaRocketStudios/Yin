@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Order Collision
+  - Chaos Collision
+  - Chaos Mask
+  - Order Player
+  - Chaos Player
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1931837881
+    locked: 0
+  - name: Middleground
+    uniqueID: 1011140917
+    locked: 0
+  - name: Blocks
+    uniqueID: 3891756553
+    locked: 0
+  - name: Foreground
+    uniqueID: 177322237
+    locked: 0

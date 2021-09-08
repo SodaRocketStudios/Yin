@@ -229,7 +229,6 @@ public class AvatarController2D : MonoBehaviour
         // Falling
         else if(isJumping == true && rigidbody2d.velocity.y < 0)
         {
-            animator.Play("Yin_Falling");
             runParticles.Stop();
         }
 

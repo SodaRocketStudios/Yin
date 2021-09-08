@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 1ffea6701aed77e4093894aba0f7a715
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -626241907077752705
+    second: TestSmoke_0
+  - first:
+      213: -6302136244371854145
+    second: TestSmoke_1
+  - first:
+      213: -5657146863177148524
+    second: TestSmoke_2
+  - first:
+      213: -2019144325709402547
+    second: TestSmoke_3
+  - first:
+      213: -5457931020659027388
+    second: TestSmoke_4
+  - first:
+      213: 8267926528171601187
+    second: TestSmoke_5
+  - first:
+      213: 2256669878820108545
+    second: TestSmoke_6
+  - first:
+      213: 2687837774798304608
+    second: TestSmoke_7
+  - first:
+      213: 4421480143492542279
+    second: TestSmoke_8
+  - first:
+      213: 9168855562754679375
+    second: TestSmoke_9
+  - first:
+      213: 7049840282361579819
+    second: TestSmoke_10
+  - first:
+      213: -6590321528612891701
+    second: TestSmoke_11
+  - first:
+      213: -3524357146901278371
+    second: TestSmoke_12
+  - first:
+      213: -8524905640371232490
+    second: TestSmoke_13
+  - first:
+      213: 5317455707561855827
+    second: TestSmoke_14
+  - first:
+      213: -5270074637306017906
+    second: TestSmoke_15
+  - first:
+      213: -975283191166688866
+    second: TestSmoke_16
+  - first:
+      213: -3282603021933501471
+    second: TestSmoke_17
+  - first:
+      213: -233696377638527000
+    second: TestSmoke_18
+  - first:
+      213: -6564558842616724751
+    second: TestSmoke_19
+  - first:
+      213: 4488711466770408776
+    second: TestSmoke_20
+  - first:
+      213: 3015512298636536781
+    second: TestSmoke_21
+  - first:
+      213: -179597017394266389
+    second: TestSmoke_22
+  - first:
+      213: 4938949729860963399
+    second: TestSmoke_23
+  - first:
+      213: -5353050361861441801
+    second: TestSmoke_24
+  - first:
+      213: 8456396761510476066
+    second: TestSmoke_25
+  - first:
+      213: -6618977743945378419
+    second: TestSmoke_26
+  - first:
+      213: -5292148337820545125
+    second: TestSmoke_27
+  - first:
+      213: 7956892507353186944
+    second: TestSmoke_28
+  - first:
+      213: 5299173964714993038
+    second: TestSmoke_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TestSmoke_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f78da21bd442f47f0800000000000000
+      internalID: -626241907077752705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_1
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbce914d9705a88a0800000000000000
+      internalID: -6302136244371854145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_2
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4975c1a96e6cd71b0800000000000000
+      internalID: -5657146863177148524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_3
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e68d30fee8af3e0800000000000000
+      internalID: -2019144325709402547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_4
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442980177a88144b0800000000000000
+      internalID: -5457931020659027388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_5
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 5400
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d62bc3f539db270800000000000000
+      internalID: 8267926528171601187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10975666c4d415f10800000000000000
+      internalID: 2256669878820108545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065bab4273e1d4520800000000000000
+      internalID: 2687837774798304608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_8
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fe056b3c04c5d30800000000000000
+      internalID: 4421480143492542279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_9
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f426bde3e815e3f70800000000000000
+      internalID: 9168855562754679375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_10
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c669926016d160800000000000000
+      internalID: 7049840282361579819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_11
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 4050
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc35b6b9c797a84a0800000000000000
+      internalID: -6590321528612891701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51175509d7f61fc0800000000000000
+      internalID: -3524357146901278371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_13
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611e2f9ac7371b980800000000000000
+      internalID: -8524905640371232490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_14
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b091efac56bc940800000000000000
+      internalID: 5317455707561855827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_15
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8744971a0fecd6b0800000000000000
+      internalID: -5270074637306017906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_16
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91a91bda191772f0800000000000000
+      internalID: -975283191166688866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_17
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 2700
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3a70b81f9d172d0800000000000000
+      internalID: -3282603021933501471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef5f89f16eb1ccf0800000000000000
+      internalID: -233696377638527000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_19
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f24eae538006e4a0800000000000000
+      internalID: -6564558842616724751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_20
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a21cfb4b1b4e30800000000000000
+      internalID: 4488711466770408776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_21
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb6d00757049d920800000000000000
+      internalID: 3015512298636536781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_22
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beebe77d671f18df0800000000000000
+      internalID: -179597017394266389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_23
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 1350
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ccfd39c9caa8440800000000000000
+      internalID: 4938949729860963399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6f87cbe0526b5b0800000000000000
+      internalID: -5353050361861441801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_25
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2297899fc082b5570800000000000000
+      internalID: 8456396761510476066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_26
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855beb8fcaa424a0800000000000000
+      internalID: -6618977743945378419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_27
+      rect:
+        serializedVersion: 2
+        x: 4050
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f488130238e86b0800000000000000
+      internalID: -5292148337820545125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_28
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08201c8f39f8c6e60800000000000000
+      internalID: 7956892507353186944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TestSmoke_29
+      rect:
+        serializedVersion: 2
+        x: 6750
+        y: 0
+        width: 1350
+        height: 1350
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85e5d905a27a8940800000000000000
+      internalID: 5299173964714993038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6eb44c2d22815f84d9049ca3fc573e53
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

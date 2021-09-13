@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ColliderMaskTest : MonoBehaviour
+public class PolyColliderMask : MonoBehaviour
 {
     private PolygonCollider2D polyCollider;
 

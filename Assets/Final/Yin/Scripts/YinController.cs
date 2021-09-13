@@ -24,6 +24,7 @@ public class YinController : MonoBehaviour
         controls = new Controls();
         controls.Enable();
         controls.Avatar.Jump.performed += Jump;
+        controls.Avatar.Jump.canceled += Jump;
 
         controller.OnLanding.AddListener(OnLanding);
 
@@ -64,13 +65,22 @@ public class YinController : MonoBehaviour
     private void OnDisable()
     {
         controls.Avatar.Jump.performed -= Jump;
+        controls.Avatar.Jump.canceled -= Jump;
         controller.OnLanding.RemoveListener(OnLanding);
     }
 
     private void Jump(InputAction.CallbackContext context)
     {
-        animator.Play("Yin_Jump");
-        controller.Jump();
+        if(context.performed == true)
+        {
+            animator.Play("Yin_Jump");
+            controller.Jump();
+        }
+        else if(context.canceled)
+        {
+            controller.ShortenJump();
+        }
+        
     }
 
     private void OnLanding()

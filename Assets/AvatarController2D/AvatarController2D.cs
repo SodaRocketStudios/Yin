@@ -68,6 +68,7 @@ namespace srs.AvatarController
         [SerializeField] private float timeToJumpApex;
         [SerializeField, Min(0)] private float fallGravityMultiplier = 1;
         private float jumpVelocity;
+        private bool isJumping;
 
         private CapsuleCollider2D avatarCollider;
         private Rigidbody2D avatarRigidbody;
@@ -110,7 +111,9 @@ namespace srs.AvatarController
 
             avatarRigidbody.gravityScale = collisions.isGrounded?0:defaultGravityScale;
 
-            if(avatarRigidbody.velocity.y < 0 && collisions.isGrounded == false)
+            bool isFalling = avatarRigidbody.velocity.y < 0 || isJumping == false && collisions.isGrounded == false;
+
+            if(isFalling == true)
             {
                 avatarRigidbody.gravityScale = defaultGravityScale*fallGravityMultiplier;
             }
@@ -153,6 +156,12 @@ namespace srs.AvatarController
         {
             Vector2 moveVelocity = jumpVelocity*Vector2.up + avatarRigidbody.velocity*Vector2.right;
             avatarRigidbody.velocity = moveVelocity;
+            isJumping = true;
+        }
+
+        public void ShortenJump()
+        {
+            isJumping = false;
         }
 
         // Check if the avatar is on the ground.

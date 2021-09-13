@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class AvatarController2D : MonoBehaviour
+public class AvatarController : MonoBehaviour
 {
     [SerializeField]
     private float moveSpeed;

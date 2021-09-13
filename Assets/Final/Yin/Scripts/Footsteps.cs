@@ -13,6 +13,9 @@ public class Footsteps : MonoBehaviour
     [SerializeField]
     private float maxPitch = 1;
 
+    [SerializeField]
+    private ParticleSystem runParticles;
+
     private AudioSource source;
 
     // Start is called before the first frame update
@@ -26,5 +29,6 @@ public class Footsteps : MonoBehaviour
         source.clip = clips[Random.Range(0, clips.Length)];
         source.pitch = Random.Range(minPitch, maxPitch);
         source.Play();
+        runParticles.Play();
     }
 }

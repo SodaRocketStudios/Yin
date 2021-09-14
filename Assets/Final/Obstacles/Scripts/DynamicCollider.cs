@@ -13,6 +13,9 @@ public class DynamicCollider : MonoBehaviour
 
     private PolygonCollider2D polyCollider;
 
+    Vector2 topRight;
+    Vector2 bottomLeft;
+
     private int noCollisionLayer;
     private int defaultLayer;
 
@@ -31,6 +34,9 @@ public class DynamicCollider : MonoBehaviour
 
         noCollisionLayer = LayerMask.NameToLayer("No Collision");
         defaultLayer = gameObject.layer;
+
+        topRight = new Vector2((polyCollider.bounds.center + polyCollider.bounds.extents).x, (polyCollider.bounds.center + polyCollider.bounds.extents).y);
+        bottomLeft = new Vector2((polyCollider.bounds.center - polyCollider.bounds.extents).x, (polyCollider.bounds.center - polyCollider.bounds.extents).y);
 
         isChaosElement = gameObject.layer == LayerMask.NameToLayer("Chaos Collision");
 
@@ -71,9 +77,6 @@ public class DynamicCollider : MonoBehaviour
 
     private void CheckBounds(Collider2D other)
     {
-        Vector2 topRight = new Vector2((polyCollider.bounds.center + polyCollider.bounds.extents).x, (polyCollider.bounds.center + polyCollider.bounds.extents).y);
-        Vector2 bottomLeft = new Vector2((polyCollider.bounds.center - polyCollider.bounds.extents).x, (polyCollider.bounds.center - polyCollider.bounds.extents).y);
-
         bool containsTopRight = other.bounds.Contains(topRight);
         bool containsBottomLeft = other.bounds.Contains(bottomLeft);
 
@@ -84,7 +87,7 @@ public class DynamicCollider : MonoBehaviour
     {
         Vector2[] points = new Vector2[defaultPoints.Length];
 
-        defaultPoints.CopyTo(points, 0);
+        polyCollider.points.CopyTo(points, 0);
 
         for(int i = 0; i < points.Length; i++)
         {
@@ -103,7 +106,6 @@ public class DynamicCollider : MonoBehaviour
 
                 bool matchNeighbor = other.bounds.Contains(neighborWorldPosition) ^ isChaosElement;
 
-                // If the neighbor is in the mask
                 if(matchNeighbor)
                 {
                     points[i] = neighbor;

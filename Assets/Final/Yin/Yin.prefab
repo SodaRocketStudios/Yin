@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8887839608954795981}
   - component: {fileID: 1753173683794203127}
   - component: {fileID: 792895895146232675}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Land Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4873,7 +4873,7 @@ GameObject:
   - component: {fileID: 8160344583831802560}
   - component: {fileID: 4087214902821962214}
   - component: {fileID: 7724042693532095775}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Run Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9739,7 +9739,7 @@ GameObject:
   - component: {fileID: 7757221512318463174}
   - component: {fileID: 5883403194814856358}
   - component: {fileID: 6359575072788214640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Yin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9849,7 +9849,7 @@ MonoBehaviour:
     m_Bits: 192
   groundCheckSize: {x: 0.5, y: 0.05}
   jumpHeight: 5
-  timeToJumpApex: 1
+  timeToJumpApex: 0.5
   fallGravityMultiplier: 3
 --- !u!82 &6359575072788214640
 AudioSource:
@@ -9959,7 +9959,7 @@ GameObject:
   - component: {fileID: 7558066037839190494}
   - component: {fileID: 3124312103038371506}
   - component: {fileID: 904360880321420557}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

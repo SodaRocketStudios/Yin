@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5752108945373458897}
   - component: {fileID: 8382376438776949863}
   - component: {fileID: 4981844716753566291}
-  - component: {fileID: 3005590525095957933}
+  - component: {fileID: 2827578093584169201}
   m_Layer: 6
   m_Name: Order_Square
   m_TagString: Untagged
@@ -113,7 +113,7 @@ PolygonCollider2D:
       - {x: -1.5, y: -1.5}
       - {x: 1.5, y: -1.5}
       - {x: 1.5, y: 1.5}
---- !u!114 &3005590525095957933
+--- !u!114 &2827578093584169201
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,8 +122,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3015290071591499013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccdaf88c448d6df47ab1fe05f195a3a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a1795cfc51c36b4786e8129b7407dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask: {fileID: 0}
-  isChaosElement: 0

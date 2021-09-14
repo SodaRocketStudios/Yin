@@ -3996,6 +3996,10 @@ PrefabInstance:
       propertyPath: source
       value: 
       objectReference: {fileID: 1301010902}
+    - target: {fileID: 8440416405840993619, guid: a9b4bdca447145a47a6f8fe44535f461, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8535129008202223417, guid: a9b4bdca447145a47a6f8fe44535f461, type: 3}
       propertyPath: m_Name
       value: Sprite
@@ -13640,8 +13644,7 @@ PolygonCollider2D:
   m_AutoTiling: 1
   m_Points:
     m_Paths:
-    - - {x: 0.6041233, y: 1.5063897}
-      - {x: -1.5, y: 1.5}
+    - - {x: -1.5, y: 1.5}
       - {x: -1.5, y: -1.5}
       - {x: 1.5, y: -1.5}
       - {x: 1.5, y: 1.5}
@@ -13716,7 +13719,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686478649}
   m_LocalRotation: {x: -0, y: -0, z: 0.707646, w: -0.7065671}
-  m_LocalPosition: {x: -32.12, y: 4.36, z: 0}
+  m_LocalPosition: {x: -32.17, y: -1.46, z: 0}
   m_LocalScale: {x: 1, y: 4.8853, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

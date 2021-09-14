@@ -98,6 +98,9 @@ namespace srs.AvatarController
             // Stop the character from rotating around the z-axis.
             avatarRigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
 
+            // Stop the landing event from firing on start.
+            collisions.isGrounded = true;
+
             if(OnLanding == null)
             {
                 OnLanding = new UnityEvent();
@@ -128,7 +131,6 @@ namespace srs.AvatarController
         {
             // Reset all collision info.
             collisions.Reset();
-
             GroundCheck();
 
             // Keep the velocity due to gravity

@@ -13437,14 +13437,6 @@ PrefabInstance:
       value: 0.33333334
       objectReference: {fileID: 0}
     - target: {fileID: 1305363247600143343, guid: a9b4bdca447145a47a6f8fe44535f461, type: 3}
-      propertyPath: maxPitch
-      value: 1.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1305363247600143343, guid: a9b4bdca447145a47a6f8fe44535f461, type: 3}
-      propertyPath: minPitch
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 1305363247600143343, guid: a9b4bdca447145a47a6f8fe44535f461, type: 3}
       propertyPath: clips.Array.size
       value: 2
       objectReference: {fileID: 0}

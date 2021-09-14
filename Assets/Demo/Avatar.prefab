@@ -9727,8 +9727,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cca8a179ad8637541b7612fe22508a42, type: 3}
   - {fileID: 8300000, guid: deee4ece31487604eb1522679900dff2, type: 3}
   - {fileID: 8300000, guid: eadf2e75a4c8cfe41a8bf2fa13ee8110, type: 3}
-  minPitch: 1
-  maxPitch: 1
+  minPitch: 0.95
+  maxPitch: 1.05
+  runParticles: {fileID: 2749957558725580548}
 --- !u!1 &8535129008577321431
 GameObject:
   m_ObjectHideFlags: 0

@@ -73,8 +73,12 @@ public class YinController : MonoBehaviour
     {
         if(context.performed == true)
         {
-            animator.Play("Yin_Jump");
-            controller.Jump();
+            if(controller.IsGrounded)
+            {
+                animator.Play("Yin_Jump");
+                controller.Jump();
+            }
+            
         }
         else if(context.canceled)
         {

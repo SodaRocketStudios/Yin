@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380231208013156645}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7558066037401177915}
@@ -4888,7 +4888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501356345999410146}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.1, y: 0.3, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7558066037401177915}
@@ -9807,12 +9807,12 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7558066037401177909}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b192356e332a2da449f15d7036b5ac9a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13567924, y: 1.0527176}
-  m_Size: {x: 0.7320137, y: 1.3439958}
+  m_Offset: {x: 0, y: 0.675}
+  m_Size: {x: 0.75, y: 1.3439958}
   m_Direction: 0
 --- !u!114 &7757221512318463174
 MonoBehaviour:
@@ -9843,7 +9843,7 @@ MonoBehaviour:
   OnLanding:
     m_PersistentCalls:
       m_Calls: []
-  slopeLimit: 45
+  slopeLimit: 60
   groundLayer:
     serializedVersion: 2
     m_Bits: 192
@@ -9974,7 +9974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7558066037839190491}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.125, y: 1.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.725, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_Children: []
   m_Father: {fileID: 7558066037401177915}

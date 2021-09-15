@@ -85,9 +85,6 @@ namespace srs.AvatarController
             avatarCollider = GetComponent<CapsuleCollider2D>();
             avatarRigidbody = GetComponent<Rigidbody2D>();
 
-            avatarCollider.sharedMaterial = new PhysicsMaterial2D();
-            avatarCollider.sharedMaterial.friction = 0;
-
             // Get the default gravity scale
             defaultGravityScale = avatarRigidbody.gravityScale;
 
@@ -144,12 +141,18 @@ namespace srs.AvatarController
                 {
                     // Move up the slope at a constant speed.
                     moveVelocity = Vector2.SmoothDamp(avatarRigidbody.velocity, collisions.tangent*moveVelocity.x, ref velocity, accelerationTime);
+                    if(isJumping == true)
+                    {
+                        moveVelocity.y += avatarRigidbody.velocity.y;
+                    }
                 }
             }
             else
             {
                 moveVelocity.x = Mathf.SmoothDamp(avatarRigidbody.velocity.x, moveVelocity.x, ref velocity.x, accelerationTime);
             }
+
+            
 
             avatarRigidbody.velocity = moveVelocity;
         }

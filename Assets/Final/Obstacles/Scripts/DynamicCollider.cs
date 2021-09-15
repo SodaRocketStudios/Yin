@@ -121,6 +121,10 @@ public class DynamicCollider : MonoBehaviour
 
                 Debug.DrawLine(worldPoints[i], worldPoints[i] + moveDirection*moveDistance, Color.red);
             }
+            else
+            {
+                points[i] = defaultPoints[i];
+            }
         }
 
         polyCollider.points = points;

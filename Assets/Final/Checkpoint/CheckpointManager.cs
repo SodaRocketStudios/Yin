@@ -15,12 +15,14 @@ public class CheckpointManager : MonoBehaviour
     private Checkpoint defaultCheckpoint;
 
     private Checkpoint _checkpoint;
-    public Checkpoint CurrentCheckpoint {
-        set {
+    public Checkpoint CurrentCheckpoint
+    {
+        set 
+        {
                 _checkpoint = value;
                 Save();
-            }
         }
+    }
 
     private void Awake()
     {

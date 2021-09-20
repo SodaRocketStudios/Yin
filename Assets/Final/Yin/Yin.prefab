@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 792895895146232675}
   m_Layer: 9
   m_Name: Land Particles
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4875,7 +4875,7 @@ GameObject:
   - component: {fileID: 7724042693532095775}
   m_Layer: 9
   m_Name: Run Particles
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9741,7 +9741,7 @@ GameObject:
   - component: {fileID: 6359575072788214640}
   m_Layer: 9
   m_Name: Yin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9961,7 +9961,7 @@ GameObject:
   - component: {fileID: 904360880321420557}
   m_Layer: 9
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

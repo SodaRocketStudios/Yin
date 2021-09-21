@@ -2,22 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class Checkpoint : MonoBehaviour
 {
-    private bool hasBeenActivated = false;
+
+    private Point _point;
+    public Point point{ get{return _point;}}
+
+
+    private void Awake()
+    {
+        _point.hasBeenActivated = false;
+        _point.position = transform.position.x;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") == true)
         {
-            if(hasBeenActivated == false)
+            if(_point.hasBeenActivated == false)
             {
                 // Set this checkpoint as the current checkpoint
-                CheckpointManager.Instance.CurrentCheckpoint = this;
+                CheckpointManager.Instance.CurrentCheckpoint = this.point;
                 
-                hasBeenActivated = true;
+                _point.hasBeenActivated = true;
             }
         }
+    }
+
+    [System.Serializable]
+    public struct Point
+    {
+        public float position;
+
+        public bool hasBeenActivated;
     }
 }

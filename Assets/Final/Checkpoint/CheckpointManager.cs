@@ -14,8 +14,8 @@ public class CheckpointManager : MonoBehaviour
     [SerializeField]
     private Checkpoint defaultCheckpoint;
 
-    private Checkpoint _checkpoint;
-    public Checkpoint CurrentCheckpoint
+    private Checkpoint.Point _checkpoint;
+    public Checkpoint.Point CurrentCheckpoint
     {
         set 
         {
@@ -24,7 +24,7 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private void Start()
     {
         if(_instance != null && _instance != this)
         {
@@ -45,16 +45,19 @@ public class CheckpointManager : MonoBehaviour
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream file = File.Open($"{Application.persistentDataPath}/SaveData.dat", FileMode.Open);
 
-            _checkpoint = (Checkpoint)formatter.Deserialize(file);
+            _checkpoint = (Checkpoint.Point)formatter.Deserialize(file);
+
+            file.Close();
         }
         else
         {
             // set the default checkpoint
-            _checkpoint = defaultCheckpoint;
+            _checkpoint = defaultCheckpoint.point;
         }
 
         // Set the player position
-        player.transform.position = _checkpoint.transform.position;
+        player.transform.position = Vector3.right * (_checkpoint.position);
+        Debug.Log($"Putting player at x = {_checkpoint.position}");
     }
 
     private void Save()
@@ -63,5 +66,6 @@ public class CheckpointManager : MonoBehaviour
         FileStream file = File.Create($"{Application.persistentDataPath}/SaveData.dat");
         formatter.Serialize(file, _checkpoint);
         file.Close();
+        Debug.Log($"Saving checkpoint at {_checkpoint.position}");
     }
 }

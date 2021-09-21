@@ -57,7 +57,6 @@ public class CheckpointManager : MonoBehaviour
 
         // Set the player position
         player.transform.position = Vector3.right * (_checkpoint.position);
-        Debug.Log($"Putting player at x = {_checkpoint.position}");
     }
 
     private void Save()
@@ -66,6 +65,5 @@ public class CheckpointManager : MonoBehaviour
         FileStream file = File.Create($"{Application.persistentDataPath}/SaveData.dat");
         formatter.Serialize(file, _checkpoint);
         file.Close();
-        Debug.Log($"Saving checkpoint at {_checkpoint.position}");
     }
 }

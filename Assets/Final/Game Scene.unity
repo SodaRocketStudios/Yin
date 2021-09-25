@@ -3877,10 +3877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3004139578827085622, guid: 5e3b9f3e56689e840a84cade2997846a, type: 3}
-      propertyPath: mask
-      value: 
-      objectReference: {fileID: 4148372065444220635}
     - target: {fileID: 7558066037401177909, guid: 5e3b9f3e56689e840a84cade2997846a, type: 3}
       propertyPath: m_Name
       value: Yin
@@ -3936,11 +3932,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7558066037401177909, guid: 5e3b9f3e56689e840a84cade2997846a, type: 3}
   m_PrefabInstance: {fileID: 2202677588787132572}
   m_PrefabAsset: {fileID: 0}
---- !u!331 &4148372065444220635 stripped
-SpriteMask:
-  m_CorrespondingSourceObject: {fileID: 8736821477331444720, guid: 1fd949ae45599d143b89aa462c013c48, type: 3}
-  m_PrefabInstance: {fileID: 4660828355936709931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4660828355936709931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3948,6 +3939,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5310058836168869255, guid: 1fd949ae45599d143b89aa462c013c48, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1725841404}
+    - target: {fileID: 5310058836168869255, guid: 1fd949ae45599d143b89aa462c013c48, type: 3}
+      propertyPath: dampingTime
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5412075071756961838, guid: 1fd949ae45599d143b89aa462c013c48, type: 3}
       propertyPath: m_RootOrder
       value: 3

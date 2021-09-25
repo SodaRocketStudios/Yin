@@ -23,7 +23,11 @@ public class TargetFollower : MonoBehaviour
 
     private void MoveTowardTarget()
     {
-        Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, dampingTime);
+        Vector3 targetPosition = (target.position + offset);
+        targetPosition.y = 0;
+        if(transform.position.x < targetPosition.x)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, dampingTime);
+        }
     }
 }

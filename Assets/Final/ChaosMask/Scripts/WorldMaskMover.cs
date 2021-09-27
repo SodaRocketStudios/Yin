@@ -49,6 +49,14 @@ public class WorldMaskMover : MonoBehaviour
         target.offset = offset;
         target.dampingTime = dampingTime;
 
+        isFollowingPlayer = false;
+
         followerScript.Target = target;
+    }
+
+    public void FollowPlayer()
+    {
+        isFollowingPlayer = true;
+        followerScript.Target = playerTarget;
     }
 }

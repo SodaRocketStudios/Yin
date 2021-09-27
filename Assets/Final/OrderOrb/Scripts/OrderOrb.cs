@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class OrderOrb : MonoBehaviour
@@ -20,7 +18,6 @@ public class OrderOrb : MonoBehaviour
     private float timeToReturn;
 
     private Vector3 returnPosition;
-
     private float returnTime;
 
     private bool hasBeenTriggered;
@@ -37,7 +34,7 @@ public class OrderOrb : MonoBehaviour
             maskMover.SetTarget(returnPosition, Vector3.zero, timeToReturn);
         }
 
-        // hasbeentriggered = false when returned.
+        // when returned, follow the player again.
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -36,8 +36,15 @@ public class WorldMaskMover : MonoBehaviour
         {
             if(player.position.x > playerTarget.position.x)
             {
-                playerTarget.position = player.position;
+                playerTarget.position = player.position.Flattened();
                 followerScript.Target = playerTarget;
+            }
+        }
+        else
+        {
+            if(followerScript.Target.position == transform.position)
+            {
+                FollowPlayer();
             }
         }
     }

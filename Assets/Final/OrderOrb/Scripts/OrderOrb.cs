@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class OrderOrb : MonoBehaviour
 {
-    [SerializeField]
     private WorldMaskMover maskMover;
 
     [SerializeField]
@@ -25,6 +24,8 @@ public class OrderOrb : MonoBehaviour
     private void Awake()
     {
         returnPosition = transform.position;
+
+        maskMover = FindObjectOfType<WorldMaskMover>();
     }
 
     private void Update()

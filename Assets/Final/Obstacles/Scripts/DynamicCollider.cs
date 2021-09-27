@@ -7,6 +7,7 @@ public class DynamicCollider : MonoBehaviour
 {
     private bool isChaosElement = false;
     private bool isBetweenWorlds = false;
+    private bool isInMask = false;
 
     private Vector2[] defaultPoints;
     private Vector2[] worldPoints;
@@ -62,7 +63,9 @@ public class DynamicCollider : MonoBehaviour
             return;
         }
 
-        if(isChaosElement == true)
+        bool canCollide = isInMask && isChaosElement || !isInMask && !isChaosElement;
+
+        if(canCollide)
         {
             gameObject.layer = defaultLayer;
         }
@@ -74,12 +77,18 @@ public class DynamicCollider : MonoBehaviour
         polyCollider.points = defaultPoints;
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        gameObject.layer = defaultLayer;
+    }
+
     private void CheckBounds(Collider2D other)
     {
         bool containsTopRight = other.bounds.Contains(topRight);
         bool containsBottomLeft = other.bounds.Contains(bottomLeft);
 
         isBetweenWorlds = containsBottomLeft ^ containsTopRight;
+        isInMask = containsBottomLeft && containsTopRight;
     }
 
     private void MovePoints(Collider2D other)

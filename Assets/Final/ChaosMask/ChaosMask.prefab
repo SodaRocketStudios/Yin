@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 37294284571904212}
   m_Layer: 8
   m_Name: ChaosMask
-  m_TagString: Untagged
+  m_TagString: Mask
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

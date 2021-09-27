@@ -19,6 +19,8 @@ public class DynamicCollider : MonoBehaviour
     private int noCollisionLayer;
     private int defaultLayer;
 
+    private Collider2D maskCollider;
+
     private void Awake()
     {
         polyCollider = GetComponent<PolygonCollider2D>();
@@ -44,20 +46,17 @@ public class DynamicCollider : MonoBehaviour
         {
             gameObject.layer = noCollisionLayer;
         }
+
+        maskCollider = GameObject.FindGameObjectWithTag("Mask").GetComponent<Collider2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Update()
     {
-        CheckBounds(other);
-    }
-
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        CheckBounds(other);
+        CheckBounds(maskCollider);
 
         if(isBetweenWorlds == true)
         {
-            MovePoints(other);
+            MovePoints(maskCollider);
 
             gameObject.layer = defaultLayer;
             return;

@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5412075071756961838}
   - component: {fileID: 8736821477331444720}
-  - component: {fileID: 5310058836168869255}
   - component: {fileID: 7776518465191405285}
   - component: {fileID: 1622014728653339578}
   - component: {fileID: 55209999854638193}
   - component: {fileID: 3672580968854667873}
+  - component: {fileID: 5310058836168869255}
+  - component: {fileID: 4488539769322405686}
   - component: {fileID: 37294284571904212}
   m_Layer: 8
   m_Name: ChaosMask
@@ -87,21 +88,6 @@ SpriteMask:
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 0
   m_SpriteSortPoint: 1
---- !u!114 &5310058836168869255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8736821477331444723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18cca9003d8af474ea80d38e897d256e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  offset: {x: 0, y: 0, z: 0}
-  dampingTime: 0
 --- !u!61 &7776518465191405285
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -210,6 +196,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48cc0352493fb25418eff7c84c9bfbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5310058836168869255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8736821477331444723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cca9003d8af474ea80d38e897d256e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4488539769322405686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8736821477331444723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d9e153a68565488902ccf2008e86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  defaultDampingTime: 0.5
+  defaultOffset: {x: 0, y: 0, z: 0}
 --- !u!50 &37294284571904212
 Rigidbody2D:
   serializedVersion: 4

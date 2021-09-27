@@ -16,6 +16,8 @@ public class WorldMaskMover : MonoBehaviour
 
     private TargetFollower followerScript;
 
+    private bool isFollowingPlayer = true;
+
     private void Awake()
     {
         followerScript = GetComponent<TargetFollower>();
@@ -26,6 +28,18 @@ public class WorldMaskMover : MonoBehaviour
         playerTarget.offset = defaultOffset;
 
         followerScript.Target = playerTarget;
+    }
+
+    private void Update()
+    {
+        if(isFollowingPlayer == true)
+        {
+            if(player.position.x > playerTarget.position.x)
+            {
+                playerTarget.position = player.position;
+                followerScript.Target = playerTarget;
+            }
+        }
     }
 
     public void SetTarget(Vector3 position, Vector3 offset, float dampingTime = 0)

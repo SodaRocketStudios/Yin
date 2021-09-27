@@ -4,7 +4,7 @@ public class TargetFollower : MonoBehaviour
 {
     [SerializeField]
     private FollowTarget target;
-    public FollowTarget Target;
+    public FollowTarget Target {set {target = value;}}
 
     private Vector3 velocity = Vector3.zero;
 

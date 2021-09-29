@@ -13,18 +13,12 @@ public class OrderOrb : MonoBehaviour
     [SerializeField]
     private float returnDelay;
 
-    [SerializeField]
-    private float timeToReturn;
-
-    private Vector3 returnPosition;
     private float returnTime;
 
     private bool hasBeenTriggered;
 
     private void Awake()
     {
-        returnPosition = transform.position;
-
         maskMover = FindObjectOfType<WorldMaskMover>();
     }
 
@@ -32,17 +26,16 @@ public class OrderOrb : MonoBehaviour
     {
         if(Time.time >= returnTime && hasBeenTriggered == true)
         {
-            maskMover.SetTarget(returnPosition, Vector3.zero, timeToReturn);
+            maskMover.FollowPlayer();
+            hasBeenTriggered = false;
         }
-
-        // when returned, follow the player again.
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if(other.CompareTag("Player") == true)
         {
-            maskMover.SetTarget(returnPosition + Vector3.left*moveDistance, Vector3.zero, timeToTarget);
+            maskMover.SetTarget(transform.position + Vector3.left*moveDistance, Vector3.zero, timeToTarget);
             returnTime = Time.time + returnDelay;
             hasBeenTriggered = true;
         }

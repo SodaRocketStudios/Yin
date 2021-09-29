@@ -40,13 +40,7 @@ public class WorldMaskMover : MonoBehaviour
                 followerScript.Target = playerTarget;
             }
         }
-        else
-        {
-            if(followerScript.Target.position == transform.position)
-            {
-                FollowPlayer();
-            }
-        }
+        
     }
 
     public void SetTarget(Vector3 position, Vector3 offset, float dampingTime = 0)
@@ -65,5 +59,7 @@ public class WorldMaskMover : MonoBehaviour
     {
         isFollowingPlayer = true;
         followerScript.Target = playerTarget;
+        playerTarget.dampingTime = defaultDampingTime;
+        playerTarget.offset = defaultOffset;
     }
 }

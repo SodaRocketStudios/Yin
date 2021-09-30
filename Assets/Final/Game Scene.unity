@@ -3783,7 +3783,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_MaskInteraction: 2
+  m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1994714779
 Transform:
@@ -3827,10 +3827,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6f15bc79b60624b870f013c1885fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveDistance: 20
+  orderTarget: 0
+  chaosTarget: 0
   timeToTarget: 0.5
-  returnDelay: 5
-  timeToReturn: 0.5
 --- !u!1 &2022792389
 GameObject:
   m_ObjectHideFlags: 0

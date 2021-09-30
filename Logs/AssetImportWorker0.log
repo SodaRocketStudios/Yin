@@ -225,3 +225,87 @@ System memory in use after: 129.0 MB.
 Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3471.
 Total: 4.385600 ms (FindLiveObjects: 0.402500 ms CreateObjectMapping: 0.082400 ms MarkObjects: 2.090300 ms  DeleteObjects: 1.809500 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.888 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2951 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.6 MB.
+System memory in use after: 129.0 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3474.
+Total: 5.553900 ms (FindLiveObjects: 0.414100 ms CreateObjectMapping: 0.083700 ms MarkObjects: 2.956900 ms  DeleteObjects: 2.097900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1338.187891 seconds.
+  path: Assets/Final/SwitchOrb/Scripts/SwitchOrb.cs
+  artifactKey: Guid(fc6f15bc79b60624b870f013c1885fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Final/SwitchOrb/Scripts/SwitchOrb.cs using Guid(fc6f15bc79b60624b870f013c1885fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '506851cef8c28bd4d12d96f73fac05ca') in 0.006197 seconds
+  Import took 0.011973 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001340 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.947 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2951 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.7 MB.
+System memory in use after: 129.0 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3477.
+Total: 4.504300 ms (FindLiveObjects: 0.448300 ms CreateObjectMapping: 0.073600 ms MarkObjects: 2.139900 ms  DeleteObjects: 1.841200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001553 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.952 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2951 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 131.6 MB.
+System memory in use after: 129.0 MB.
+
+Unloading 40 unused Assets to reduce memory usage. Loaded Objects now: 3480.
+Total: 5.336900 ms (FindLiveObjects: 0.547400 ms CreateObjectMapping: 0.219600 ms MarkObjects: 2.619900 ms  DeleteObjects: 1.948600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

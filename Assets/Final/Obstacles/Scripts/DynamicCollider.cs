@@ -42,11 +42,8 @@ public class DynamicCollider : MonoBehaviour
         bottomLeft = new Vector2((polyCollider.bounds.center - polyCollider.bounds.extents).x, (polyCollider.bounds.center - polyCollider.bounds.extents).y);
 
         isChaosElement = gameObject.layer == LayerMask.NameToLayer("Chaos Collision");
-
-        if(isChaosElement)
-        {
-            gameObject.layer = noCollisionLayer;
-        }
+            
+        gameObject.layer = noCollisionLayer;
 
         maskCollider = GameObject.FindGameObjectWithTag("Mask").GetComponent<Collider2D>();
     }
@@ -79,7 +76,7 @@ public class DynamicCollider : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        gameObject.layer = defaultLayer;
+        // gameObject.layer = defaultLayer;
     }
 
     private void CheckBounds(Collider2D other)

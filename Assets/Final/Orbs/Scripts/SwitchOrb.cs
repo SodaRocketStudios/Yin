@@ -5,15 +5,12 @@ public class SwitchOrb : MonoBehaviour
     private WorldMaskMover maskMover;
 
     [SerializeField]
-    private float orderTarget;
-
-    [SerializeField]
-    private float chaosTarget;
+    private float moveDistance;
 
     [SerializeField]
     private float timeToTarget;
 
-    private bool useChaosTarget = true;
+    private bool hasBeenTriggered = false;
 
     private void Awake()
     {
@@ -22,12 +19,10 @@ public class SwitchOrb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") == true)
+        if(hasBeenTriggered == false && other.CompareTag("Player") == true)
         {
-            float moveDistance = useChaosTarget?chaosTarget:orderTarget;
             maskMover.SetTarget(transform.position + Vector3.right*moveDistance, Vector3.zero, timeToTarget);
-            
-            useChaosTarget = !useChaosTarget;
+            hasBeenTriggered = true;
         }
     }
 }

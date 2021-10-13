@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Track02" version="1" revision="0" sampleRate="44100" sampleFormat="5" tempo="80" timesigNumerator="4" timesigDenominator="4">
+    <pool>
+        <audioSources/>
+        <trackNameExtensions>
+            <trackNameExtension trackType="0" value="0"/>
+            <trackNameExtension trackType="1" value="0"/>
+            <trackNameExtension trackType="2" value="0"/>
+            <trackNameExtension trackType="3" value="0"/>
+            <trackNameExtension trackType="4" value="1"/>
+        </trackNameExtensions>
+        <blockNameExtensions>
+            <blockNameExtension trackType="0" value="0"/>
+            <blockNameExtension trackType="1" value="0"/>
+            <blockNameExtension trackType="2" value="0"/>
+            <blockNameExtension trackType="3" value="0"/>
+            <blockNameExtension trackType="4" value="3"/>
+        </blockNameExtensions>
+        <blockSourceNameExtension value="0"/>
+        <nextTakeGroupId value="0"/>
+    </pool>
+    <masterTrack name="Master" type="0" armed="0" monitored="0" automationArmed="0" audioUnitsBypass="0" latencyOffset="0" inverse="0">
+        <state>PwAAAD9TMzM.UzMzPwAAAA==</state>
+        <audioUnits/>
+        <automationContainer>
+            <automationTracks>
+                <automationTrack parameterIndex="2" mode="3" enabled="1" defaultValue="0.82499999">
+                    <blocks/>
+                </automationTrack>
+                <automationTrack parameterIndex="3" mode="3" enabled="1" defaultValue="0.5">
+                    <blocks/>
+                </automationTrack>
+            </automationTracks>
+        </automationContainer>
+        <sendsAutomationContainer>
+            <automationTracks/>
+            <state></state>
+        </sendsAutomationContainer>
+        <metaData>
+            <data key="TrackColor" value="#91c1ff"/>
+        </metaData>
+        <audioOutput externalDeviceIndex="-1" channelIndex="-1"/>
+        <track name="Koto Ensamble" type="4" armed="0" monitored="1" automationArmed="0" audioUnitsBypass="0" latencyOffset="0" inverse="0">
+            <state>PwAAAD9TMzM.UzMzPwAAAA==</state>
+            <audioUnits/>
+            <automationContainer>
+                <automationTracks>
+                    <automationTrack parameterIndex="0" mode="3" enabled="1" defaultValue="0.5">
+                        <blocks/>
+                    </automationTrack>
+                    <automationTrack parameterIndex="1" mode="3" enabled="1" defaultValue="0.82499999">
+                        <blocks/>
+                    </automationTrack>
+                    <automationTrack parameterIndex="2" mode="3" enabled="1" defaultValue="0.82499999">
+                        <blocks/>
+                    </automationTrack>
+                    <automationTrack parameterIndex="3" mode="3" enabled="1" defaultValue="0.5">
+                        <blocks/>
+                    </automationTrack>
+                </automationTracks>
+            </automationContainer>
+            <sendsAutomationContainer>
+                <automationTracks/>
+                <state></state>
+            </sendsAutomationContainer>
+            <metaData>
+                <data key="TrackAutoArmed" value="true"/>
+                <data key="TrackColor" value="#ff91ff"/>
+            </metaData>
+            <audioOutput externalDeviceIndex="-1" channelIndex="-1"/>
+            <blocks>
+                <block name="MIDI 2" position="0" positionStart="0" positionEnd="352800" loopOffset="0" framesCount="352800" loopEnabled="0" groupId="4294967295" muted="0">
+                    <metaData>
+                        <data key="BlockColor" value="#ff91ff"/>
+                    </metaData>
+                    <blockData>AAAAEA==</blockData>
+                    <automationBlocks/>
+                </block>
+            </blocks>
+            <midiUnits/>
+            <midiInstrument uid="AAAAAFNWMlRTZkxiAAAAAA==" vendor="Spitfire Audio" name="LABS (64 Bit)" sideChainBufferType="1">
+                <state>Q2NuSxQAAAAAAAAAAAAAAAAAAABDY25LAAAAAEZCQ2gAAAABAAAAAAABBAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABpbVkMyIVIaAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI.PiA8TGFicz48TUVUQSBmYW1pbHk9Ik1vb24gR3VpdGFyIiBuYW1lPSJFbnNlbWJsZSIgcHJvZHVjdE1vZGU9IjAiIHZlcnNpb249IjEuMC40IiB0YWdzPSIxMDQwMTAwOkFjb3VzdGljIEd1aXRhciwxMDQwMDAwOkd1aXRhciIgbW9kaWZpZWQ9IjAiLz48VUkgdWlzaXplPSIxLjA4MDE3MjQxMzc5MzEwMyIgdWljb2xsYXBzZWQ9IjEiLz48QVJUSUNTPjxTRVRUSU5HIGlkPSJwX3N5bmNUb1RlbXBvIiB2YWx1ZT0iMSIvPjxTRVRUSU5HIGlkPSJwX2R5bmFtaWNzVmVsb2NpdHlNb2RlIiB2YWx1ZT0iQ09NUFJFU1NFRCBWRUxPQ0lUWSBISUdIIi8+PFNFVFRJTkcgaWQ9InBfc2hvcnRSVE1vZGUiIHZhbHVlPSItMi4wIi8+PFNFVFRJTkcgaWQ9InBfdmVsb2NpdHlDdXJ2ZSIgdmFsdWU9IkxJTkVBUiBWRUxPQ0lUWSIvPjxTRVRUSU5HIGlkPSJwX3F1YW50aXNlTW9kZSIgdmFsdWU9IiIvPjxTRVRUSU5HIGlkPSJwX21peGVyQWR2YW5jZWQiIHZhbHVlPSIxIi8+PFNFVFRJTkcgaWQ9InBfbWl4ZXJHbG9iYWwiIHZhbHVlPSIxIi8+PFNFVFRJTkcgaWQ9InBfbWl4ZXJMb2NrIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJwX21peGVyUGFnZSIgdmFsdWU9IiIvPjxTRVRUSU5HIGlkPSJwX2FydGljTG9jayIgdmFsdWU9IjAiLz48U0VUVElORyBpZD0icF9hcnRpY1BhZ2UiIHZhbHVlPSIiLz48U0VUVElORyBpZD0icF9sYXN0U2VsZWN0ZWRQcmltYXJ5QXJ0aWMiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9InBfbWlkaUNoYW5uZWwiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9InBfc2VsZWN0ZWRUYWdzIiB2YWx1ZT0iIi8+PFNFVFRJTkcgaWQ9InBfZmlsdGVyUG9zIiB2YWx1ZT0iW10iLz48U0VUVElORyBpZD0icF9wcmVzZXRQb3MiIHZhbHVlPSJbMCwgMTgwXSIvPjxTRVRUSU5HIGlkPSJwX2V2b0NvbnRhaW5lclBvcyIgdmFsdWU9IltdIi8+PFNFVFRJTkcgaWQ9InBfb2N0YXZlIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJwX29kZXN0SW5kaWNlcyIgdmFsdWU9IjAsMSwyLDMsNCw1LDYsNyw4LDksMTAsMTEsMTIsMTMsMTQsMTUsMTYsMTcsMTgsMTksMjAsMjEsMjIsMjMsMjQsMjUsMjYsMjcsMjgsMjksMzAsMzEsMzIsMzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsNDIsNDMsNDQsNDUsNDYsNDcsNDgsNDksNTAsNTEsNTIsNTMsNTQsNTUsNTYsNTcsNTgsNTksNjAsNjEsNjIsNjMsNjQsNjUsNjYsNjcsNjgsNjksNzAsNzEsNzIsNzMsNzQsNzUsNzYsNzcsNzgsNzksODAsODEsODIsODMsODQsODUsODYsODcsODgsODksOTAsOTEsOTIsOTMsOTQsOTUsOTYsOTcsOTgsOTksMTAwLDEwMSwxMDIsMTAzLDEwNCwxMDUsMTA2LDEwNywxMDgsMTA5LDExMCwxMTEsMTEyLDExMywxMTQsMTE1LDExNiwxMTcsMTE4LDExOSwxMjAsMTIxLDEyMiwxMjMsMTI0LDEyNSwxMjYsMTI3LDEyOCwxMjksMTMwLDEzMSwxMzIsMTMzLDEzNCwxMzUsMTM2LDEzNywxMzgsMTM5LDE0MCwxNDEsMTQyLDE0MywxNDQsMTQ1LDE0NiwxNDcsMTQ4LDE0OSwxNTAsMTUxLDE1MiwxNTMsMTU0LDE1NSwxNTYsMTU3LDE1OCwxNTksMTYwLDE2MSwxNjIsMTYzLDE2NCwxNjUsMTY2LDE2NywxNjgsMTY5LDE3MCwxNzEsMTcyLDE3MywxNzQsMTc1LDE3NiwxNzcsMTc4LDE3OSwxODAsMTgxLDE4MiwxODMsMTg0LDE4NSwxODYsMTg3LDE4OCwxODksMTkwLDE5MSwxOTIsMTkzLDE5NCwxOTUsMTk2LDE5NywxOTgsMTk5LDIwMCwyMDEsMjAyLDIwMywyMDQsMjA1LDIwNiwyMDcsMjA4LDIwOSwyMTAsMjExLDIxMiwyMTMsMjE0LDIxNSwyMTYsMjE3LDIxOCwyMTksMjIwLDIyMSwyMjIsMjIzLDIyNCwyMjUsMjI2LDIyNywyMjgsMjI5LDIzMCwyMzEsMjMyLDIzMywyMzQsMjM1LDIzNiwyMzcsMjM4LDIzOSwyNDAsMjQxLDI0MiwyNDMsMjQ0LDI0NSwyNDYsMjQ3LDI0OCwyNDksMjUwLDI1MSwyNTIsMjUzLDI1NCwyNTUsMjU2LDI1NywyNTgsMjU5LDI2MCwyNjEsMjYyLDI2MywyNjQiLz48U0VUVElORyBpZD0icF90aW1lU3RyZXRjaCIgdmFsdWU9IkRlZmF1bHQiLz48U0VUVElORyBpZD0icF92b2ljZUNob2tlIiB2YWx1ZT0iMC4wIi8+PFNFVFRJTkcgaWQ9InBfbG9vcEVuZCIgdmFsdWU9IjAuMCIvPjxBUlRJQz48U0VUVElORyBpZD0iYV9uYW1lIiB2YWx1ZT0iTEFCU19Nb29uX0d1aXRhcl9FbnNlbWJsZSIvPjxTRVRUSU5HIGlkPSJhX3ZlcnNpb24iIHZhbHVlPSIxNjc3ODI0MCIvPjxTRVRUSU5HIGlkPSJhX3RlbXBsYXRlSWR4IiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJhX29kZXN0IiB2YWx1ZT0iUkVWRVJCIi8+PFNFVFRJTkcgaWQ9ImFfYWN0aXZlIiB2YWx1ZT0iMiIvPjxTRVRUSU5HIGlkPSJhX2JhY2tBY3RpdmUiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9ImFfdHdvSGFuZGVkIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJhX2F1dG9NYWtlVXAiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9InRfdHlwZSIgdmFsdWU9IjEiLz48U0VUVElORyBpZD0idF9lbmFibGVkIiB2YWx1ZT0iMSIvPjxTRVRUSU5HIGlkPSJ0X2xhdGNoIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJ0X2tleXN3aXRjaCIgdmFsdWU9IjAiLz48U0VUVElORyBpZD0idF9taWRpQ2hhbm5lbCIgdmFsdWU9IjEiLz48U0VUVElORyBpZD0idF92ZWxGcm9tIiB2YWx1ZT0iMSIvPjxTRVRUSU5HIGlkPSJ0X3ZlbFRvIiB2YWx1ZT0iMTI3Ii8+PFNFVFRJTkcgaWQ9InRfY2MiIHZhbHVlPSIzMiIvPjxTRVRUSU5HIGlkPSJ0X2NjVmFsdWVGcm9tIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJ0X2NjVmFsdWVUbyIgdmFsdWU9IjEyNyIvPjxTRVRUSU5HIGlkPSJ0X3NwZWVkRnJvbSIgdmFsdWU9IjAuMCIvPjxTRVRUSU5HIGlkPSJ0X3NwZWVkVG8iIHZhbHVlPSIwLjUiLz48U0VUVElORyBpZD0idF9wcm9ncmFtQ2hhbmdlIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJ0X3RlbXBvRnJvbSIgdmFsdWU9IjAuMCIvPjxTRVRUSU5HIGlkPSJ0X3RlbXBvVG8iIHZhbHVlPSIwLjAiLz48U0VUVElORyBpZD0icnJfdGltZW91dCIgdmFsdWU9Ii0xLjAiLz48U0VUVElORyBpZD0icnJfbmVpZ2hib3VyTWluIiB2YWx1ZT0iNDgiLz48U0VUVElORyBpZD0icnJfbmVpZ2hib3VyTWF4IiB2YWx1ZT0iODUiLz48U0VUVElORyBpZD0icnJfdXNlTmVpZ2hib3VyIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJycl9jb3VudCIgdmFsdWU9Ii0xIi8+PFNFVFRJTkcgaWQ9InJyX2luYyIgdmFsdWU9IjEiLz48U0VUVElORyBpZD0icnJfbGF5ZXJzIiB2YWx1ZT0iMSIvPjxTRVRUSU5HIGlkPSJycl9nYWluIiB2YWx1ZT0iMS4wIi8+PFNFVFRJTkcgaWQ9InJyX3N0YXJ0IiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJycl9zeW5jIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJycl9wbGF5IiB2YWx1ZT0iMSIvPjxTRVRUSU5HIGlkPSJycl9rZXlzd2l0Y2hGcm9tIiB2YWx1ZT0iLTEiLz48U0VUVElORyBpZD0icnJfa2V5c3dpdGNoVG8iIHZhbHVlPSItMSIvPjxTRVRUSU5HIGlkPSJycl9rZXlzd2l0Y2hUbyIgdmFsdWU9Ii0xIi8+PFNFVFRJTkcgaWQ9InJyX21vZGUiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9InJfbWlkaUNoYW5uZWwiIHZhbHVlPSIwIi8+PFNFVFRJTkcgaWQ9InJfdHJhbnNwb3NlIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJyX2xheWVyVHJhbnNwb3NlIiB2YWx1ZT0iMCIvPjxTRVRUSU5HIGlkPSJpX2V4cHJlc3Npb24iIHZhbHVlPSIxLjAiLz48U0VUVElORyBpZD0iaV9keW5hbWljcyIgdmFsdWU9IjAuMCIvPjxTRVRUSU5HIGlkPSJpX3JldmVyYiIgdmFsdWU9IjAuNjE0MTcyOTk1MDkwNDg0NiIvPjxTRVRUSU5HIGlkPSJpX3JlbGVhc2UiIHZhbHVlPSIwLjUiLz48U0VUVElORyBpZD0iaV90aWdodCIgdmFsdWU9IjAuNTAzOTM3MDA1OTk2NzA0MSIvPjxTRVRUSU5HIGlkPSJpX3ZpYnJhdG8iIHZhbHVlPSIxLjAiLz48U0VUVElORyBpZD0iaV92YXJpYXRpb24iIHZhbHVlPSIwLjAiLz48U0VUVElORyBpZD0ic19wYW4iIHZhbHVlPSIwLjUiLz48U0VUVElORyBpZD0ic193aWR0aCIgdmFsdWU9IjAuNSIvPjxTRVRUSU5HIGlkPSJzX2ZsaXAiIHZhbHVlPSIwLjAiLz48TUlYPjxTRVRUSU5HIGlkPSJtX21haW4iIHZhbHVlPSIxLjAiIG1pY0lkPSIxIi8+PFNFVFRJTkcgaWQ9ImVfbWFpbiIgdmFsdWU9IjEiIG1pY0lkPSIxIi8+PFNFVFRJTkcgaWQ9ImJfbWFpbiIgdmFsdWU9IjAiIG1pY0lkPSIxIi8+PFNFVFRJTkcgaWQ9Im1fYWx0MSIgdmFsdWU9IjAuMCIgbWljSWQ9IjIiLz48U0VUVElORyBpZD0iZV9hbHQxIiB2YWx1ZT0iMCIgbWljSWQ9IjIiLz48U0VUVElORyBpZD0iYl9hbHQxIiB2YWx1ZT0iMCIgbWljSWQ9IjIiLz48U0VUVElORyBpZD0ibV9hbHQyIiB2YWx1ZT0iMC4wIiBtaWNJZD0iMyIvPjxTRVRUSU5HIGlkPSJlX2FsdDIiIHZhbHVlPSIwIiBtaWNJZD0iMyIvPjxTRVRUSU5HIGlkPSJiX2FsdDIiIHZhbHVlPSIwIiBtaWNJZD0iMyIvPjxTRVRUSU5HIGlkPSJtX2FsdDMiIHZhbHVlPSIwLjAiIG1pY0lkPSI0Ii8+PFNFVFRJTkcgaWQ9ImVfYWx0MyIgdmFsdWU9IjAiIG1pY0lkPSI0Ii8+PFNFVFRJTkcgaWQ9ImJfYWx0MyIgdmFsdWU9IjAiIG1pY0lkPSI0Ii8+PC9NSVg+PC9BUlRJQz48L0FSVElDUz48UEFSQU1FVEVSUz48UEFSQU0gaWQ9ImdfZ2FpbiIgdmFsdWU9IjEuMCIgY2M9IjciLz48UEFSQU0gaWQ9ImdfcGFuIiB2YWx1ZT0iMC41IiBjYz0iMTAiLz48UEFSQU0gaWQ9ImdfdHVuZSIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3JldmVyYiIgdmFsdWU9IjAuNjE0MTcyOTk1MDkwNDg0NiIgY2M9IjE5Ii8+PFBBUkFNIGlkPSJpX3RpZ2h0IiB2YWx1ZT0iMC41MDM5MzcwMDU5OTY3MDQxIiBjYz0iMTgiLz48UEFSQU0gaWQ9Imlfc3BlZWQiIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9yZWxlYXNlIiB2YWx1ZT0iMC41IiBjYz0iMTciLz48UEFSQU0gaWQ9ImlfZXhwcmVzc2lvbiIgdmFsdWU9IjEuMCIgY2M9IjExIi8+PFBBUkFNIGlkPSJpX2R5bmFtaWNzIiB2YWx1ZT0iMC4wIiBjYz0iMSIvPjxQQVJBTSBpZD0iaV92YXJpYXRpb24iIHZhbHVlPSIwLjAiIGNjPSIyMCIvPjxQQVJBTSBpZD0iaV92aWJyYXRvIiB2YWx1ZT0iMS4wIiBjYz0iMjEiLz48UEFSQU0gaWQ9ImlfZW52YXR0IiB2YWx1ZT0iMC4wOTk5OTk5ODY1ODg5NTQ5MyIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX2VudmRlYyIgdmFsdWU9IjAuMDk5OTk5OTk0MDM5NTM1NTIiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9lbnZzdXMiIHZhbHVlPSIxLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9lbnZyZWwiIHZhbHVlPSIyLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9taXhzaW1wbGUiIHZhbHVlPSIwLjUiIGNjPSItMSIvPjxQQVJBTSBpZD0ic19mbGlwIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9InNfd2lkdGgiIHZhbHVlPSIwLjUiIGNjPSItMSIvPjxQQVJBTSBpZD0ic19wYW4iIHZhbHVlPSIwLjUiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9kZWxheSIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX2Ftb3VudCIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX2Rpc3RvcnQiIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9sdXNoVmVyYiIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3BlZHZvbCIgdmFsdWU9IjAuNSIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3BlZER5biIgdmFsdWU9IjAuNSIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX2xlbmd0aCIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3RpbWVNYWNoaW5lIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9Imlfc3RyZXRjaCIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3NvZnRQZWRhbCIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX3Jlc3BvbnNlIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfbWFsbGV0IiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9Imlfc3RvcGVNdXRlIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfZGlyZWN0aW9uIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfbHBGaWx0ZXIiIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9wb3J0YW1lbnRvIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfbWV0YVsxOF0iIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9tZXRhWzE5XSIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX21ldGFbMjBdIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfbWV0YVsyMV0iIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9tZXRhWzIyXSIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX21ldGFbMjNdIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9ImlfbWV0YVsyNF0iIHZhbHVlPSIwLjAiIGNjPSItMSIvPjxQQVJBTSBpZD0iaV9tZXRhWzI1XSIgdmFsdWU9IjAuMCIgY2M9Ii0xIi8+PFBBUkFNIGlkPSJpX21ldGFbMjZdIiB2YWx1ZT0iMC4wIiBjYz0iLTEiLz48UEFSQU0gaWQ9Im1fbWFpbiIgdmFsdWU9IjEuMCIgY2M9IjIyIi8+PFBBUkFNIGlkPSJtX2FsdDEiIHZhbHVlPSIwLjAiIGNjPSIyMyIvPjxQQVJBTSBpZD0ibV9hbHQyIiB2YWx1ZT0iMC4wIiBjYz0iMjQiLz48UEFSQU0gaWQ9Im1fYWx0MyIgdmFsdWU9IjAuMCIgY2M9IjI1Ii8+PC9QQVJBTUVURVJTPjwvTGFicz4A</state>
+                <automationContainer>
+                    <automationTracks/>
+                </automationContainer>
+                <metaData>
+                    <data key="AudioUnitCollapsedState" value="true"/>
+                    <data key="AudioUnitHParamIndex" value="-1"/>
+                    <data key="AudioUnitParameterOrder" value=""/>
+                    <data key="AudioUnitReadState" value="false"/>
+                    <data key="AudioUnitVParamIndex" value="-1"/>
+                </metaData>
+            </midiInstrument>
+            <midiInput externalDeviceIndex="0" channelIndex="-1"/>
+            <midiOutput externalDeviceIndex="-1" channelIndex="-1"/>
+        </track>
+        <midiMappings/>
+    </masterTrack>
+    <metaData>
+        <data key="SequencerTrackControlsWidth" value="216"/>
+        <data key="TrackColor" value="#91ffef"/>
+        <data key="TransportCount" value="false"/>
+        <data key="TransportFollow" value="true"/>
+        <data key="TransportLoop" value="true"/>
+        <data key="TransportMetronome" value="false"/>
+        <data key="TransportPlayPositionL" value="0"/>
+        <data key="TransportPlayPositionR" value="1058400"/>
+        <data key="TransportSnap" value="true"/>
+        <data key="TransportSnapIndex" value="4"/>
+    </metaData>
+    <timeline timeSigNumerator="4" timeSigDenominator="4" tempo="80"/>
+</project>

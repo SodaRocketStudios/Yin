@@ -58,6 +58,9 @@ public class WorldMaskMover : MonoBehaviour
     public void FollowPlayer()
     {
         isFollowingPlayer = true;
+
+        playerTarget.position = player.position.Flattened();
+
         followerScript.Target = playerTarget;
         playerTarget.dampingTime = defaultDampingTime;
         playerTarget.offset = defaultOffset;

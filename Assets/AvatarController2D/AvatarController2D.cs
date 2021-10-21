@@ -130,6 +130,8 @@ namespace srs.AvatarController
             collisions.Reset();
             GroundCheck();
 
+            float xVelocity = moveVelocity.x;
+
             // Keep the velocity due to gravity
             moveVelocity.y = avatarRigidbody.velocity.y;
 
@@ -141,18 +143,19 @@ namespace srs.AvatarController
                 {
                     // Move up the slope at a constant speed.
                     moveVelocity = Vector2.SmoothDamp(avatarRigidbody.velocity, collisions.tangent*moveVelocity.x, ref velocity, accelerationTime);
+
                     if(isJumping == true)
                     {
-                        moveVelocity.y += avatarRigidbody.velocity.y;
+                        moveVelocity.y = avatarRigidbody.velocity.y;
                     }
+
+                    avatarRigidbody.isKinematic = xVelocity == 0;
                 }
             }
             else
             {
                 moveVelocity.x = Mathf.SmoothDamp(avatarRigidbody.velocity.x, moveVelocity.x, ref velocity.x, accelerationTime);
             }
-
-            
 
             avatarRigidbody.velocity = moveVelocity;
         }

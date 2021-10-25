@@ -130,7 +130,12 @@ namespace srs.AvatarController
             collisions.Reset();
             GroundCheck();
 
-            float xVelocity = moveVelocity.x;
+            avatarRigidbody.isKinematic = moveVelocity.x == 0 && collisions.isGrounded;
+
+            if(avatarRigidbody.isKinematic && isJumping == false)
+            {
+                avatarRigidbody.velocity = Vector2.zero;
+            }
 
             // Keep the velocity due to gravity
             moveVelocity.y = avatarRigidbody.velocity.y;
@@ -148,8 +153,6 @@ namespace srs.AvatarController
                     {
                         moveVelocity.y = avatarRigidbody.velocity.y;
                     }
-
-                    avatarRigidbody.isKinematic = xVelocity == 0;
                 }
             }
             else

@@ -10,7 +10,7 @@ public class SwitchOrb : MonoBehaviour
     [SerializeField]
     private float timeToTarget;
 
-    private bool hasBeenTriggered = false;
+    private bool triggerEnabled = true;
 
     private void Awake()
     {
@@ -19,10 +19,21 @@ public class SwitchOrb : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(hasBeenTriggered == false && other.CompareTag("Player") == true)
+        if(triggerEnabled == true && other.CompareTag("Player") == true)
         {
             maskMover.SetTarget(transform.position + Vector3.right*moveDistance, Vector3.zero, timeToTarget);
-            hasBeenTriggered = true;
+        }
+        else if(other.CompareTag("Mask") == true)
+        {
+            triggerEnabled = false;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Mask") == true)
+        {
+            triggerEnabled = true;
         }
     }
 }

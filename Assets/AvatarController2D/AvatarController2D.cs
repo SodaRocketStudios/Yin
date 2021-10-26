@@ -234,6 +234,7 @@ namespace srs.AvatarController
             Gizmos.DrawLine(pos, (Vector2)pos + collisions.tangent);
         }
 
+        [System.Serializable]
         private struct CollisionInfo
         {
             public bool isGrounded;

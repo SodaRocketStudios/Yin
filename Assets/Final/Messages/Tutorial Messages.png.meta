@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 6011873182145410367
     second: Reset Orb
+  - first:
+      213: -139517102613850794
+    second: Touching a chaos orb
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -171,7 +174,7 @@ TextureImporter:
         width: 889
         height: 318
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +195,7 @@ TextureImporter:
         width: 871
         height: 370
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,7 +216,7 @@ TextureImporter:
         width: 1243
         height: 367
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +237,7 @@ TextureImporter:
         width: 1756
         height: 369
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,7 +258,7 @@ TextureImporter:
         width: 604
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,7 +279,7 @@ TextureImporter:
         width: 899
         height: 387
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,11 +296,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1925
-        y: 1347
+        y: 1776
         width: 1348
-        height: 557
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,7 +321,7 @@ TextureImporter:
         width: 1450
         height: 441
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -326,6 +329,27 @@ TextureImporter:
       bones: []
       spriteID: f3579709ec67e6350800000000000000
       internalID: 6011873182145410367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Touching a chaos orb
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 1347
+        width: 1352
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6551c923fe5501ef0800000000000000
+      internalID: -139517102613850794
       vertices: []
       indices: 
       edges: []

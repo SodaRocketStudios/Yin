@@ -201,15 +201,6 @@ namespace srs.AvatarController
             {
                 collisions.isGrounded = true;
 
-                // The avatar landed
-                if(collisions.wasGrounded == false)
-                {
-                    if(OnLanding != null)
-                    {
-                        OnLanding.Invoke();
-                    }
-                }
-
                 if(Mathf.Abs(collisions.slopeAngle) > 0)
                 {
                     collisions.isOnSlope = true;
@@ -217,6 +208,16 @@ namespace srs.AvatarController
                     if(Mathf.Abs(collisions.slopeAngle) > slopeLimit)
                     {
                         collisions.beyondSlopeLimit = true;
+                        collisions.isGrounded = false;
+                    }
+                }
+
+                // The avatar landed
+                if(collisions.wasGrounded == false)
+                {
+                    if(OnLanding != null)
+                    {
+                        OnLanding.Invoke();
                     }
                 }
             }

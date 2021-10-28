@@ -130,7 +130,9 @@ namespace srs.AvatarController
             collisions.Reset();
             GroundCheck();
 
-            avatarRigidbody.isKinematic = moveVelocity.x == 0 && collisions.isGrounded;
+            float moveDirection = Mathf.Sign(moveVelocity.x);
+
+            avatarRigidbody.isKinematic = moveVelocity.x == 0 && collisions.isGrounded && collisions.beyondSlopeLimit == false;
 
             if(avatarRigidbody.isKinematic && isJumping == false)
             {
@@ -152,6 +154,14 @@ namespace srs.AvatarController
                     if(isJumping == true)
                     {
                         moveVelocity.y = avatarRigidbody.velocity.y;
+                    }
+                }
+                else
+                {
+                    // If the player is ruinning into a slope that is too steep.
+                    if(collisions.normal.x*moveDirection < 0)
+                    {
+                        moveVelocity.x = 0;
                     }
                 }
             }
@@ -178,8 +188,8 @@ namespace srs.AvatarController
         // Check if the avatar is on the ground.
         private void GroundCheck()
         {
-            Vector3 pos = avatarCollider.bounds.center + Vector3.down*(avatarCollider.size.y/2 + groundCheckSize.y/2.0f);
-            RaycastHit2D hit = Physics2D.BoxCast(pos, groundCheckSize, 0, Vector2.down, 0, groundLayer);
+            Vector3 position = avatarCollider.bounds.center + Vector3.down*(avatarCollider.size.y/2 + groundCheckSize.y/2.0f);
+            RaycastHit2D hit = Physics2D.BoxCast(position, groundCheckSize, 0, Vector2.down, 0, groundLayer);
 
             collisions.normal = hit.normal;
             collisions.tangent = -Vector2.Perpendicular(collisions.normal);

@@ -40,6 +40,10 @@ public class WorldMaskMover : MonoBehaviour
                 followerScript.Target = playerTarget;
             }
         }
+        else if(player.position.x > followerScript.Target.position.x)
+        {
+            FollowPlayer();
+        }
         
     }
 

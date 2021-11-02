@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Demo/Main Menu.unity
     guid: 6c70a8d29c7024c41b3dcba51bef2326
-  - enabled: 1
+  - enabled: 0
     path: Assets/Demo/Game Scene.unity
     guid: 4a40aa5bd3af87845b49ad86b73f7aca
   - enabled: 0
     path: Assets/Demo/Image Scene.unity
     guid: 29ec51b132a9ead4e91d3b28fa97c010
+  - enabled: 1
+    path: Assets/Final/Main Menu.unity
+    guid: e1a884a08097c654197e3d6c1c8a0695
+  - enabled: 1
+    path: Assets/Final/Game Scene.unity
+    guid: 2fe7edcd30dafcd4a8e8630622f9b57d
   m_configObjects: {}

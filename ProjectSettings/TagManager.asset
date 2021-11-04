@@ -45,6 +45,9 @@ TagManager:
   - name: Background
     uniqueID: 1931837881
     locked: 0
+  - name: Orbs
+    uniqueID: 801645577
+    locked: 0
   - name: Middleground
     uniqueID: 1011140917
     locked: 0

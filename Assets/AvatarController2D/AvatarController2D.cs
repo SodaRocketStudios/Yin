@@ -213,12 +213,9 @@ namespace srs.AvatarController
                 }
 
                 // The avatar landed
-                if(collisions.wasGrounded == false)
+                if(collisions.wasGrounded == false && IsGrounded == true)
                 {
-                    if(OnLanding != null)
-                    {
-                        OnLanding.Invoke();
-                    }
+                    OnLanding.Invoke();
                 }
             }
         }

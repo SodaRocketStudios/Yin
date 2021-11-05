@@ -74,11 +74,6 @@ public class DynamicCollider : MonoBehaviour
         polyCollider.points = defaultPoints;
     }
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        // gameObject.layer = defaultLayer;
-    }
-
     private void CheckBounds(Collider2D other)
     {
         bool containsTopRight = other.bounds.Contains(topRight);
@@ -121,6 +116,13 @@ public class DynamicCollider : MonoBehaviour
                 float deltaX = maskEdgePosition - worldPoints[i].x;
                 float angle = Vector2.Angle(Vector2.right, moveDirection);
                 float moveDistance = deltaX/(Mathf.Cos(angle*Mathf.Deg2Rad));
+
+                float maxDistance = transform.localScale.y*Mathf.Max(polyCollider.bounds.size.x, polyCollider.bounds.size.y)*3;
+
+                if(deltaX > maxDistance)
+                {
+                    continue;
+                }
 
                 points[i] = transform.InverseTransformPoint(worldPoints[i] + moveDirection*moveDistance);
 

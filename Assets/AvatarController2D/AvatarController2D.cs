@@ -216,6 +216,7 @@ namespace srs.AvatarController
                 if(collisions.wasGrounded == false && IsGrounded == true)
                 {
                     OnLanding.Invoke();
+                    isJumping = false;
                 }
             }
         }

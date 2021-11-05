@@ -17,6 +17,9 @@ TextureImporter:
   - first:
       213: 3760674464881954987
     second: Volume
+  - first:
+      213: -7811504096720598664
+    second: Clear Save Data
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -254,6 +257,27 @@ TextureImporter:
       bones: []
       spriteID: ba0db2b3089903430800000000000000
       internalID: 3760674464881954987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clear Save Data
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 68
+        width: 963
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879c5714966f79390800000000000000
+      internalID: -7811504096720598664
       vertices: []
       indices: 
       edges: []

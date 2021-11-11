@@ -61,7 +61,7 @@ public class AvatarController : MonoBehaviour
     private Vector2 moveVelocity;
     private Vector3 velocity = Vector3.zero;
     private bool isGrounded = true;
-    private bool jumping = false;
+    // private bool jumping = false;
     private float defaultGravityScale;
     private float fallGravityScale;
     private float jumpTimer;

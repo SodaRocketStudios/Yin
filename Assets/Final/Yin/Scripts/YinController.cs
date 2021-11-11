@@ -92,4 +92,14 @@ public class YinController : MonoBehaviour
         // Play Landing particle effect
         LandParticles.Play();
     }
+
+    public void EnableControls()
+    {
+        controls.Enable();
+    }
+
+    public void DisableControls()
+    {
+        controls.Disable();
+    }
 }

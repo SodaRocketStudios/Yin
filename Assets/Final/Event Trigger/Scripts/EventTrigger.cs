@@ -15,10 +15,17 @@ public class EventTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(triggerOnce == false || hasBeenTriggered == false)
+        if(other.CompareTag("Player") == true)
         {
-            OnTriggerEvent.Invoke();
-        }
-        
+            if(triggerOnce == false)
+            {
+                OnTriggerEvent.Invoke();
+            }
+            else if(triggerOnce == true && hasBeenTriggered == false)
+            {
+                OnTriggerEvent.Invoke();
+            }
+            hasBeenTriggered = true;
+        }   
     }
 }

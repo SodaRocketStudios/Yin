@@ -23,6 +23,8 @@ public class MenuManager : MonoBehaviour
     {
         controls = new Controls();
 
+        controls.Enable();
+
         controls.Avatar.Quit.performed += (context) => Pause();
         MainMenu();
     }

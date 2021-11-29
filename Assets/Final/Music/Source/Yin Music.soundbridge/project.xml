@@ -40,7 +40,7 @@
             <data key="TrackColor" value="#9a91ff"/>
         </metaData>
         <audioOutput externalDeviceIndex="-1" channelIndex="-1"/>
-        <track name="MIDI 0" type="4" armed="0" monitored="1" automationArmed="0" audioUnitsBypass="0" latencyOffset="0" inverse="0">
+        <track name="MIDI 0" type="4" armed="1" monitored="1" automationArmed="0" audioUnitsBypass="0" latencyOffset="0" inverse="0">
             <state>PwAAAD9TMzM.UzMzPwAAAA==</state>
             <audioUnits/>
             <automationContainer>
@@ -67,6 +67,7 @@
                 <data key="LoadedMidiPresetId" value="32"/>
                 <data key="LoadedMidiPresetRootNote" value="0"/>
                 <data key="LoadedMidiPresetType" value="1"/>
+                <data key="TrackAutoArmed" value="true"/>
                 <data key="TrackColor" value="#ff9198"/>
             </metaData>
             <audioOutput externalDeviceIndex="-1" channelIndex="-1"/>
@@ -75,35 +76,35 @@
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAAAMAAAAAAAActUZkAAAAAAAEAAAZHwAAGR9IZAAAAAAABQAAMHIAAB6BRmQAAAAAAAYAAE0oAAAgTEhkAAAAAAAHAABmSAAAIExGZAAAAAAACAAAgTMAACsRSGQAAAAAAAkAAKp3AAA11UZkAAAAAAAKAADa6wAAPs5IZAAAAAAACwABFiIAAEQwRmQAAAAAAAwAAVFaAABNKEhkAAAAAAANAAGVigAAYrFGZAAAAAAADgAB660AAG12SGQAAAAAAA8AAlPAAABdUEZkAAA=</blockData>
+                    <blockData>AAAAEAAAAAAAAAAAAAActUZkAAAAAAABAAAZHwAAGR9IZAAAAAAAAgAAMHIAAB6BRmQAAAAAAAMAAE0oAAAgTEhkAAAAAAAEAABmSAAAIExGZAAAAAAABQAAgTMAACsRSGQAAAAAAAYAAKp3AAA11UZkAAAAAAAHAADa6wAAPs5IZAAAAAAACAABFiIAAEQwRmQAAAAAAAkAAVFaAABNKEhkAAAAAAAKAAGVigAAYrFGZAAAAAAACwAB660AAG12SGQAAAAAAAwAAlPAAABdUEZkAAA=</blockData>
                     <automationBlocks/>
                 </block>
                 <block name="Sweep down" position="176400" positionStart="0" positionEnd="88200" loopOffset="0" framesCount="88200" loopEnabled="0" groupId="4294967295" muted="0">
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAABMAAAAAAAAgTEhkAAAAAAAUAAAViAAAIExGZAAAAAAAFQAAJa8AACWvQ2QAAAAAABYAAD7OAAAiGUFkAAAAAAAXAABWIwAAIhg.ZAAAAAAAGAAAad4AACd5PGQAAAAAABkAAIL+AAAs3DpkAAAAAAAaAACjSwAAKUQ3ZAAAAAAAGwAAvjYAAClENWQAAAAAABwAANrrAAAyPjNkAAAAAAAeAAELXwAATSkwZAAA</blockData>
+                    <blockData>AAAAEAAAAAAAAAAAAAAgTEhkAAAAAAABAAAViAAAIExGZAAAAAAAAgAAJa8AACWvQ2QAAAAAAAMAAD7OAAAiGUFkAAAAAAAEAABWIwAAIhg.ZAAAAAAABQAAad4AACd5PGQAAAAAAAYAAIL+AAAs3DpkAAAAAAAHAACjSwAAKUQ3ZAAAAAAACAAAvjYAAClENWQAAAAAAAkAANrrAAAyPjNkAAAAAAAKAAELXwAATSkwZAAA</blockData>
                     <automationBlocks/>
                 </block>
                 <block name="MIDI 4" position="264600" positionStart="0" positionEnd="88200" loopOffset="0" framesCount="88200" loopEnabled="0" groupId="4294967295" muted="0">
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAAAYAAAAAAABWIjVkAAAAAAAHAABWIgAAViI3ZAAAAAAADQAArEQAACsROmQAAAAAAA4AANdVAAArETdkAAAAAAAQAAECZgAAViI6ZAAA</blockData>
+                    <blockData>AAAAEAAAAAAAAAAAAABWIjVkAAAAAAABAABWIgAAViI3ZAAAAAAAAgAArEQAACsROmQAAAAAAAMAANdVAAArETdkAAAAAAAEAAECZgAAViI6ZAAA</blockData>
                     <automationBlocks/>
                 </block>
                 <block name="Melody 1" position="352800" positionStart="0" positionEnd="617400" loopOffset="0" framesCount="617400" loopEnabled="0" groupId="4294967295" muted="0">
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAAAEAAAAAAAAnezxkAAAAAAACAAAnewAAKxE6ZAAAAAAABAAAUowAACsRPGQAAAAAAAYAAKiuAABWIj9kAAAAAAAJAAD+0AAAKxE8ZAAAAAAACgABKeEAACsROmQAAAAAAAsAAVTyAAArETxkAAAAAAAMAAGAAwAAViI3ZAAAAAAADgACATYAACsRPGQAAAAAAA8AAixHAAArETpkAAAAAAAQAAJXWAAAKxE8ZAAAAAAAEQACgmkAACsRN2QAAAAAABIAAq16AAArETpkAAAAAAAVAALYiwAAKxE3ZAAAAAAAFgADA5wAACsRNWQAAAAAABcAAy6tAAArETNkAAAAAAAYAANZvgAAKxE1ZAAAAAAAGgADhM8AACsRN2QAAAAAABsAA6.gAAArETVkAAAAAAAcAAPa8QAAKxEzZAAAAAAAHQAEBgIAACsRMGQAAAAAAB4ABFwkAABWIjVkAAAAAAAhAASyRgAAKxE3ZAAAAAAAIgAE3VcAACsROmQAAAAAACQABQhoAAArETVkAAAAAAAnAAViIAAAKxE6ZAAAAAAAKAAFjTEAACsRPGQAAAAAACkABbhCAAArET9kAAAAAAArAAXjUwAAViI8ZAAAAAAALAAGOXUAACsROmQAAAAAAC0ABmSGAAArETdkAAAAAAAwAAa6qAAAKxE.ZAAAAAAAMQAG5bkAACsRQWQAAAAAADIABxDKAAArEUNkAAAAAAAzAAc72wAAKxFGZAAAAAAANAAHZuwAACsRQ2QAAAAAADUAB5H9AAArEUFkAAAAAAA3AAe9DgAAKxE.ZAAAAAAAOAAH6B8AACsRQWQAAAAAADkACBMwAABWIjxkAAAAAAA6AAhpUgAAKxE6ZAAAAAAAPAAIlGMAACsRPGQAAAAAAEUACL90AAArET9kAAAAAABIAAjqhQAAKxE8ZAAAAAAASQAJFZYAAFYiOmQAAA==</blockData>
+                    <blockData>AAAAEAAAAAAAAAAAAAAnezxkAAAAAAABAAAnewAAKxE6ZAAAAAAAAgAAUowAACsRPGQAAAAAAAMAAKiuAABWIj9kAAAAAAAEAAD+0AAAKxE8ZAAAAAAABQABKeEAACsROmQAAAAAAAYAAVTyAAArETxkAAAAAAAHAAGAAwAAViI3ZAAAAAAACAACATYAACsRPGQAAAAAAAkAAixHAAArETpkAAAAAAAKAAJXWAAAKxE8ZAAAAAAACwACgmkAACsRN2QAAAAAAAwAAq16AAArETpkAAAAAAANAALYiwAAKxE3ZAAAAAAADgADA5wAACsRNWQAAAAAAA8AAy6tAAArETNkAAAAAAAQAANZvgAAKxE1ZAAAAAAAEQADhM8AACsRN2QAAAAAABIAA6.gAAArETVkAAAAAAATAAPa8QAAKxEzZAAAAAAAFAAEBgIAACsRMGQAAAAAABUABFwkAABWIjVkAAAAAAAWAASyRgAAKxE3ZAAAAAAAFwAE3VcAACsROmQAAAAAABgABQhoAAArETVkAAAAAAAZAAViIAAAKxE6ZAAAAAAAGgAFjTEAACsRPGQAAAAAABsABbhCAAArET9kAAAAAAAcAAXjUwAAViI8ZAAAAAAAHQAGOXUAACsROmQAAAAAAB4ABmSGAAArETdkAAAAAAAfAAa6qAAAKxE.ZAAAAAAAIAAG5bkAACsRQWQAAAAAACEABxDKAAArEUNkAAAAAAAiAAc72wAAKxFGZAAAAAAAIwAHZuwAACsRQ2QAAAAAACQAB5H9AAArEUFkAAAAAAAlAAe9DgAAKxE.ZAAAAAAAJgAH6B8AACsRQWQAAAAAACcACBMwAABWIjxkAAAAAAAoAAhpUgAAKxE6ZAAAAAAAKQAIlGMAACsRPGQAAAAAACoACL90AAArET9kAAAAAAArAAjqhQAAKxE8ZAAAAAAALAAJFZYAAFYiOmQAAA==</blockData>
                     <automationBlocks/>
                 </block>
                 <block name="MIDI 6" position="970200" positionStart="0" positionEnd="88200" loopOffset="0" framesCount="88200" loopEnabled="0" groupId="4294967295" muted="0">
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAAAAAAAAAAAArETxkAAAAAAAPAAApugAAMTU.ZAAAAAAAEAAAUh4AADT0QWQAAAAAABEAAHmEAAA2l0NkAAAAAAAsAACjSwAAKUVBZAAAAAAALQAAysUAACWuP2QAAAAAADUAAOzbAAAiGEFkAAAAAAA4AAEJkwAAIhg.ZAAAAAAAOQABKBQAABy2QWQAAAAAADcAAT9oAAAZIENkAAA=</blockData>
+                    <blockData>AAAAEAAAAAAAAAAAAAArETxkAAAAAAABAAApugAAMTU.ZAAAAAAAAgAAUh4AADT0QWQAAAAAAAMAAHmEAAA2l0NkAAAAAAAEAACjSwAAKUVBZAAAAAAABQAAysUAACWuP2QAAAAAAAYAAOzbAAAiGEFkAAAAAAAHAAEJkwAAIhg.ZAAAAAAACAABKBQAABy2QWQAAAAAAAkAAT9oAAAZIENkAAA=</blockData>
                     <automationBlocks/>
                 </block>
                 <block name="Back and Forth" position="1058400" positionStart="0" positionEnd="176400" loopOffset="0" framesCount="176400" loopEnabled="0" groupId="4294967295" muted="0">
@@ -120,11 +121,18 @@
                     <blockData>AAAAEAAAAAAAAAAAAAAgTEhkAAAAAAABAAAViAAAIExGZAAAAAAAAgAAJa8AACWvQ2QAAAAAAAMAAD7OAAAiGUFkAAAAAAAEAABWIwAAIhg.ZAAAAAAABQAAad4AACd5PGQAAAAAAAYAAIL+AAAs3DpkAAAAAAAHAACjSwAAKUQ3ZAAAAAAACAAAvjYAAClENWQAAAAAAAkAANrrAAAyPjNkAAAAAAAKAAELXwAATSkwZAAA</blockData>
                     <automationBlocks/>
                 </block>
-                <block name="MIDI 7" position="1323000" positionStart="0" positionEnd="441000" loopOffset="0" framesCount="441000" loopEnabled="0" groupId="4294967295" muted="0">
+                <block name="MIDI 7" position="1323000" positionStart="0" positionEnd="970200" loopOffset="0" framesCount="970200" loopEnabled="0" groupId="4294967295" muted="0">
                     <metaData>
                         <data key="BlockColor" value="#ff9198"/>
                     </metaData>
-                    <blockData>AAAAEAAAABcAAFYiAACBMzdkAAAAAAAZAAEtdwAAgTM6ZAAAAAAAGwABrqoAAIEzNWQAAAAAABwAAi.dAACBMzdkAAAAAAAdAAKxEAAAViIzZAAAAAAAHgADBzIAAFYiNWQAAAAAAB8AA11UAAArETBkAAA=</blockData>
+                    <blockData>AAAAEAAAAAAAAFYiAACBMzdkAAAAAAABAAECZgAAgTM6ZAAAAAAAAgABrqoAAIEzNWQAAAAAAAMAAi.dAACBMzdkAAAAAAAEAAKxEAAAViIzZAAAAAAABQADBzIAAFYiNWQAAAAAAAYAA11UAAArETBkAAAAAAAJAAOzdgAAKxEzZAAAAAAACgAD3ocAACsRNWQAAAAAAAsABAmYAAArETdkAAAAAAAMAAQ0qQAAKxE1ZAAAAAAADQAEX7oAACsRM2QAAAAAAA4ABIrLAAArETVkAAAAAAAPAAS13AAAKxEwZAAAAAAAEQAFC.4AAFYiNWQAAAAAABIABWIgAAArETdkAAAAAAATAAWNMQAAKxE6ZAAAAAAAFgAFuEIAACsRPGQAAAAAABcABeNTAAArETpkAAAAAAAYAAYOZAAAViI.ZAAAAAAAGQAGZIYAACsRPGQAAAAAABoABo+XAAArETpkAAAAAAAcAAa6qAAAKxE8ZAAAAAAAHQAG5bkAACsROmQAAAAAAB4ABxDKAAArETdkAAAAAAAfAAc72wAAKxE6ZAAAAAAAIgAHZuwAAFYiPGQAAAAAACgACBMwAAArETxkAAAAAAApAAg+QQAAKxE6ZAAAAAAAKgAIaVIAACsRN2QAAAAAACsACJRjAAArETpkAAAAAAAsAAi.dAAAKxE8ZAAAAAAALQAI6oUAACsRP2QAAAAAAC4ACRWWAAArEUFkAAAAAAA1AAlApwAAKxFDZAAAAAAANgAJa7gAACsRQWQAAAAAADcACZbJAAArET9kAAAAAAA4AAnB2gAAKxE8ZAAAAAAAOQAJ7OsAACsRP2QAAAAAADoAChf8AAArETxkAAAAAAA7AApDDQAAKxE6ZAAAAAAAPAAKbh4AACsRN2QAAAAAAD0ACsRAAABWIjxkAAAAAAA+AAsaYgAAKxE.ZAAAAAAAPwALcIQAAFYiPGQAAAAAAEAAC8amAAArETpkAAAAAABCAAvxtwAAKxE3ZAAAAAAARAAMHMgAACsRPGQAAAAAAE4ADHLqAABWIj9kAAAAAABQAAzJDAAAKxFBZAAAAAAAUQAM9B0AACsRQ2QAAAAAAFIADR8uAAArEUFkAAAAAABTAA1KPwAAKxE.ZAAAAAAAVAANdVAAACsRPGQAAAAAAFUADctyAABWIjpkAAAAAABWAA4hlAAAKxE3ZAAA</blockData>
+                    <automationBlocks/>
+                </block>
+                <block name="Sweep down" position="2293200" positionStart="0" positionEnd="88658" loopOffset="0" framesCount="88658" loopEnabled="0" groupId="4294967295" muted="0">
+                    <metaData>
+                        <data key="BlockColor" value="#ff9198"/>
+                    </metaData>
+                    <blockData>AAAAEAAAAAoAACsRAABNKTBkAAAAAAAJAABbhQAAMj4zZAAAAAAACAAAeDoAAClENWQAAAAAAAcAAJMlAAApRDdkAAAAAAAGAACzcgAALNw6ZAAAAAAABQAAzJIAACd5PGQAAAAAAAQAAOBNAAAiGD9kAAAAAAADAAD3ogAAIhlBZAAAAAAAAgABEMEAACWvQ2QAAAAAAAEAASDoAAAgTEZkAAAAAAAAAAE2cAAAIExIZAAA</blockData>
                     <automationBlocks/>
                 </block>
             </blocks>
@@ -150,13 +158,13 @@
     </masterTrack>
     <metaData>
         <data key="SequencerTrackControlsWidth" value="216"/>
-        <data key="TrackColor" value="#ffb291"/>
+        <data key="TrackColor" value="#91ff9e"/>
         <data key="TransportCount" value="false"/>
         <data key="TransportFollow" value="true"/>
         <data key="TransportLoop" value="true"/>
         <data key="TransportMetronome" value="false"/>
         <data key="TransportPlayPositionL" value="0"/>
-        <data key="TransportPlayPositionR" value="1852200"/>
+        <data key="TransportPlayPositionR" value="2381400"/>
         <data key="TransportSnap" value="true"/>
         <data key="TransportSnapIndex" value="4"/>
     </metaData>

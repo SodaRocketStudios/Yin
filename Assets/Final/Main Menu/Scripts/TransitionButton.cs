@@ -24,4 +24,9 @@ public class TransitionButton : MonoBehaviour, IPointerEnterHandler, IPointerExi
     {
         linkedButton.color = defaultColor;
     }
+
+    private void Update()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+    }
 }

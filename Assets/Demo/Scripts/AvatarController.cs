@@ -106,8 +106,6 @@ public class AvatarController : MonoBehaviour
 
         jump.started += (context) => OnJump(context);
         jump.canceled += (context) => OnJump(context);
-
-        quit.performed += (context) => QuitToMenu(context);
     }
 
     private void FixedUpdate()
@@ -281,11 +279,6 @@ public class AvatarController : MonoBehaviour
     {
         isJumping = true;
         rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, jumpVelocity);
-    }
-
-    public void QuitToMenu(InputAction.CallbackContext context)
-    {
-        SceneManager.LoadScene("Main Menu");
     }
 
     private void OnDrawGizmos()

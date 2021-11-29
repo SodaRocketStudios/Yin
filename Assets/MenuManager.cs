@@ -6,34 +6,59 @@ public class MenuManager : MonoBehaviour
     private GameObject mainMenu;
     
     [SerializeField]
+    private GameObject pauseMenu;
+
+    [SerializeField]
     private GameObject settingsMenu;
 
     [SerializeField]
     private YinController playerController;
 
+    private Controls controls;
+
+    private bool paused = false;
+    private bool atMainMenu = false;
+
+    private void Start()
+    {
+        controls = new Controls();
+
+        controls.Avatar.Quit.performed += (context) => Pause();
+        MainMenu();
+    }
+
     public void Play()
     {
         mainMenu.SetActive(false);
-        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(false);
         playerController.EnableControls();
+        atMainMenu = false;
     }
 
     public void Pause()
     {
-        settingsMenu.SetActive(true);
-        mainMenu.SetActive(false);
-        playerController.DisableControls();
+        if(atMainMenu == false)
+        {
+            pauseMenu.SetActive(!pauseMenu.activeSelf);
+            playerController.DisableControls();
+        }
     }
 
     public void MainMenu()
     {
         mainMenu.SetActive(true);
-        settingsMenu.SetActive(false);
+        pauseMenu.SetActive(false);
         playerController.DisableControls();
+        atMainMenu = true;
+    }
+
+    public void SettingsMenu()
+    {
+        settingsMenu.SetActive(true);
     }
 
     public void Quit()
     {
-
+        Application.Quit();
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Footsteps : MonoBehaviour
@@ -14,21 +12,24 @@ public class Footsteps : MonoBehaviour
     private float maxPitch = 1;
 
     [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
     private ParticleSystem runParticles;
 
-    private AudioSource source;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponentInParent<AudioSource>();
+        audioSource = GetComponentInParent<AudioSource>();
     }
 
     public void Step()
     {
-        source.clip = clips[Random.Range(0, clips.Length)];
-        source.pitch = Random.Range(minPitch, maxPitch);
-        source.Play();
+        audioSource.clip = clips[Random.Range(0, clips.Length)];
+        audioSource.pitch = Random.Range(minPitch, maxPitch);
+        audioSource.Play();
         runParticles.Play();
     }
 }

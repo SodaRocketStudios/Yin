@@ -26,8 +26,6 @@ public class YinController : MonoBehaviour
         controls.Avatar.Jump.performed += Jump;
         controls.Avatar.Jump.canceled += Jump;
 
-        controller.OnLanding.AddListener(OnLanding);
-
         animator = GetComponentInChildren<Animator>();
 
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -66,7 +64,6 @@ public class YinController : MonoBehaviour
     {
         controls.Avatar.Jump.performed -= Jump;
         controls.Avatar.Jump.canceled -= Jump;
-        controller.OnLanding.RemoveListener(OnLanding);
     }
 
     private void Jump(InputAction.CallbackContext context)
@@ -85,12 +82,6 @@ public class YinController : MonoBehaviour
             controller.ShortenJump();
         }
         
-    }
-
-    private void OnLanding()
-    {
-        // Play Landing particle effect
-        LandParticles.Play();
     }
 
     public void EnableControls()

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class SaveData : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class SaveData : MonoBehaviour
         if(File.Exists($"{Application.persistentDataPath}/SaveData.dat"))
         {
             File.Delete($"{Application.persistentDataPath}/SaveData.dat");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

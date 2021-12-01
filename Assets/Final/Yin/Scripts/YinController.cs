@@ -48,15 +48,15 @@ public class YinController : MonoBehaviour
         // If Yin is moving on the ground
         if(Mathf.Abs(controller.Velocity.x) > 0 && controller.IsGrounded)
         {
-            animator.Play("Yin_Run");
+            animator.Play("Run");
         }
         else if(controller.IsGrounded)
         {
-            animator.Play("Yin_Idle");
+            animator.Play("Idle");
         }
         else
         {
-            animator.Play("Yin_Jump");
+            animator.Play("Jump");
         }
     }
 
@@ -72,7 +72,7 @@ public class YinController : MonoBehaviour
         {
             if(controller.IsGrounded)
             {
-                animator.Play("Yin_Jump");
+                animator.Play("Jump");
                 controller.Jump();
             }
             

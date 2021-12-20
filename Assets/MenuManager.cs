@@ -12,6 +12,9 @@ public class MenuManager : MonoBehaviour
     private GameObject settingsMenu;
 
     [SerializeField]
+    private GameObject endScreen;
+
+    [SerializeField]
     private YinController playerController;
 
     private Controls controls;
@@ -43,6 +46,7 @@ public class MenuManager : MonoBehaviour
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
             playerController.DisableControls();
+            endScreen.SetActive(false);
         }
     }
 

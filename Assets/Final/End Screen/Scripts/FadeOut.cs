@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class FadeIn : MonoBehaviour
+public class FadeOut : MonoBehaviour
 {
     private Image image;
 
@@ -13,7 +13,7 @@ public class FadeIn : MonoBehaviour
     private float fadeAmount;
 
     public UnityEvent OnComplete;
-    private bool complete;
+    private bool complete = true;
 
     private void Awake()
     {
@@ -22,21 +22,24 @@ public class FadeIn : MonoBehaviour
         fadeAmount = 1/fadeTime;
     }
 
-    private void OnEnable()
+    public void Play(float delay)
     {
+        StartCoroutine(PlayAfterSeconds(delay));
+    }
+
+    private IEnumerator PlayAfterSeconds(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         complete = false;
-        Color color = image.color;
-        color.a = 0;
-        image.color = color;
     }
 
     private void Update() {
         if(complete == false)
         {
             float fadeStep = fadeAmount*Time.deltaTime;
-            image.color = image.color + new Color(0, 0, 0, fadeStep);
+            image.color = image.color - new Color(0, 0, 0, fadeStep);
 
-            if(image.color.a >= 1)
+            if(image.color.a <= 0)
             {
                 OnComplete.Invoke();
                 complete = true;

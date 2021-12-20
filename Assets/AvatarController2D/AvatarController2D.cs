@@ -108,6 +108,7 @@ namespace srs.AvatarController
         {
             collisions.Reset();
             GroundCheck();
+            SlopeCheck();
 
             avatarRigidbody.gravityScale = collisions.isGrounded?0:defaultGravityScale;
 
@@ -129,6 +130,7 @@ namespace srs.AvatarController
             // Reset all collision info.
             collisions.Reset();
             GroundCheck();
+            SlopeCheck();
 
             float moveDirection = Mathf.Sign(moveVelocity.x);
 
@@ -201,6 +203,40 @@ namespace srs.AvatarController
             {
                 collisions.isGrounded = true;
 
+                // if(Mathf.Abs(collisions.slopeAngle) > 0)
+                // {
+                //     collisions.isOnSlope = true;
+
+                //     if(Mathf.Abs(collisions.slopeAngle) > slopeLimit)
+                //     {
+                //         collisions.beyondSlopeLimit = true;
+                //         collisions.isGrounded = false;
+                //     }
+                // }
+
+                // The avatar landed
+                if(collisions.wasGrounded == false && IsGrounded == true)
+                {
+                    OnLanding.Invoke();
+                    isJumping = false;
+                }
+            }
+        }
+
+        private void SlopeCheck()
+        {
+            Vector3 position = avatarCollider.bounds.center;
+            Vector2 size = new Vector2(avatarCollider.size.x+groundCheckSize.y*2, avatarCollider.size.y);
+            RaycastHit2D hit = Physics2D.BoxCast(position, size, 0, Vector2.down, 0, groundLayer);
+
+            collisions.normal = hit.normal;
+            collisions.tangent = -Vector2.Perpendicular(collisions.normal);
+
+            collisions.slopeAngle = Mathf.Abs(Vector2.Angle(Vector2.up, collisions.normal));
+
+            // If the avatar is grounded
+            if(hit)
+            {
                 if(Mathf.Abs(collisions.slopeAngle) > 0)
                 {
                     collisions.isOnSlope = true;
@@ -208,15 +244,7 @@ namespace srs.AvatarController
                     if(Mathf.Abs(collisions.slopeAngle) > slopeLimit)
                     {
                         collisions.beyondSlopeLimit = true;
-                        collisions.isGrounded = false;
                     }
-                }
-
-                // The avatar landed
-                if(collisions.wasGrounded == false && IsGrounded == true)
-                {
-                    OnLanding.Invoke();
-                    isJumping = false;
                 }
             }
         }
@@ -231,6 +259,13 @@ namespace srs.AvatarController
 
             // Draw the ground check boxcast
             Gizmos.DrawWireCube(pos, new Vector3(groundCheckSize.x, groundCheckSize.y, 0));
+
+            pos = collider.bounds.center;
+            Vector2 size = new Vector2(collider.size.x+groundCheckSize.y*2, collider.size.y);
+
+            Gizmos.color = Color.magenta;
+
+            Gizmos.DrawWireCube(pos, new Vector3(size.y, size.x, 0));
 
             Gizmos.color = Color.green;
 

@@ -45177,6 +45177,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 396610726}
     - target: {fileID: 5883403194814856358, guid: 5e3b9f3e56689e840a84cade2997846a, type: 3}
+      propertyPath: groundCheckSize.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883403194814856358, guid: 5e3b9f3e56689e840a84cade2997846a, type: 3}
       propertyPath: OnLanding.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2202677588787132574}

@@ -69,4 +69,16 @@ public class WorldMaskMover : MonoBehaviour
         playerTarget.dampingTime = defaultDampingTime;
         playerTarget.offset = defaultOffset;
     }
+
+    public void ResetToPlayer()
+    {
+        FollowTarget target = new FollowTarget();
+        target.position = player.position.Flattened();
+        target.offset = Vector3.zero;
+        target.dampingTime = 0;
+
+        isFollowingPlayer = false;
+
+        followerScript.Target = target;
+    }
 }

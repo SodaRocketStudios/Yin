@@ -5237,6 +5237,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 459144942056702751, guid: f6cc17de800c2fd40a3df0d4d47e1061, type: 3}
   m_PrefabInstance: {fileID: 199927045}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &204850334 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4488539769322405686, guid: 1fd949ae45599d143b89aa462c013c48, type: 3}
+  m_PrefabInstance: {fileID: 4660828355936709931}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d9e153a68565488902ccf2008e86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &204853838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24668,6 +24679,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2202677588787132573}
   defaultCheckpoint: {fileID: 7791552051919721223}
+  OnLoad:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 204850334}
+        m_TargetAssemblyTypeName: WorldMaskMover, Assembly-CSharp
+        m_MethodName: ResetToPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1103696505
 Transform:
   m_ObjectHideFlags: 0
@@ -32019,6 +32045,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 752845873}
     m_Modifications:
+    - target: {fileID: 5030434346393091012, guid: a078e02276bb99049910153d604b585f, type: 3}
+      propertyPath: triggerOnce
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5030434346393091012, guid: a078e02276bb99049910153d604b585f, type: 3}
       propertyPath: OnTriggerEvent.m_PersistentCalls.m_Calls.Array.size
       value: 2

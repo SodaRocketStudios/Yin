@@ -1,6 +1,7 @@
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CheckpointManager : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class CheckpointManager : MonoBehaviour
     private Checkpoint.Point _checkpoint;
     public Checkpoint.Point CurrentCheckpoint
     {
+        get
+        {
+            return _checkpoint;
+        }
         set 
         {
                 _checkpoint = value;
@@ -23,7 +28,9 @@ public class CheckpointManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    public UnityEvent OnLoad;
+
+    private void Awake()
     {
         if(_instance != null && _instance != this)
         {
@@ -37,7 +44,7 @@ public class CheckpointManager : MonoBehaviour
         Load();
     }
 
-    private void Load()
+    public void Load()
     {
         if(File.Exists($"{Application.persistentDataPath}/SaveData.dat"))
         {
@@ -56,6 +63,8 @@ public class CheckpointManager : MonoBehaviour
 
         // Set the player position
         player.transform.position = Vector3.right * (_checkpoint.position);
+
+        OnLoad.Invoke();
     }
 
     private void Save()

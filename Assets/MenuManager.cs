@@ -57,6 +57,7 @@ public class MenuManager : MonoBehaviour
         endScreen.SetActive(false);
         playerController.DisableControls();
         atMainMenu = true;
+        CheckpointManager.Instance.Load();
     }
 
     public void SettingsMenu()

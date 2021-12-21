@@ -54,6 +54,7 @@ public class MenuManager : MonoBehaviour
     {
         mainMenu.SetActive(true);
         pauseMenu.SetActive(false);
+        endScreen.SetActive(false);
         playerController.DisableControls();
         atMainMenu = true;
     }
